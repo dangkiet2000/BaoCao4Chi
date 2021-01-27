@@ -16,7 +16,7 @@ public class BinhLuanController extends HttpServlet {
         BinhLuanEntity ble = new BinhLuanEntity();
         List<BinhLuan> listBl = ble.getAllBinhLuan();
         request.setAttribute("BL",listBl);
-        request.getRequestDispatcher("admin/examples/quanlybinhluan.jsp").forward(request,response);
+        request.getRequestDispatcher("View/quanlybinhluan.jsp").forward(request,response);
     }
 
     @Override

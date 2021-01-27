@@ -5,7 +5,9 @@
   Time: 1:10 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page contentType="text/html;charset=UTF-8" language="java"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <html>
 <head>
     <script type="text/javascript" src="danhsach.js"></script>
@@ -29,6 +31,9 @@
     <link href="<c:url value='/csswebadmin/admin/css/material-dashboard-rtl.css' />" rel="stylesheet" />
 </head>
 <body>
+<div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+    ADMIN
+</a></div>
 <div class="sidebar-wrapper">
     <ul class="nav">
         <li class="nav-item  ">

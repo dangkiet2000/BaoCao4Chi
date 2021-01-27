@@ -15,8 +15,8 @@
     <script type="text/javascript" src="danhsach.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<c:url value='/csswebadmin/admin/img/apple-icon.png'/>">
+    <link rel="icon" type="image/png" href="<c:url value='/csswebadmin/admin/img/favicon.png'/>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
         Material Dashboard by Creative Tim
@@ -39,7 +39,7 @@
 <body>
 
 <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="<c:url value=' /csswebadmin/admin/img/sidebar-1.jpg'/>">
         <!--
           Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -63,15 +63,15 @@
                     </a>
                 </li>
                 <li class="nav-item  ">
-                    // đổi đường dẫn html sang jsp
-                    <a class="nav-link" href="./danhsachadmin.html">
+
+                    <a class="nav-link" href="./danhsachadmin.jsp">
                         <i class="material-icons">person</i>
                         <p>Quản lý admin</p>
                     </a>
                 </li>
                 <li class="nav-item  ">
-                    // đổi đường dẫn html sang jsp
-                    <a class="nav-link" href="./danhsachsanpham.html">
+
+                    <a class="nav-link" href="./dachsachsanpham.jsp">
                         <i class="material-icons">content_paste</i>
                         <p>Quản lý sản phẩm</p>
                     </a>
@@ -132,7 +132,7 @@
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
             <div class="container-fluid">
                 <div class="navbar-wrapper">
-                    <a class="navbar-brand" style="color:#ff6600 ;" href="danhsachtaikhoan.html">Danh sách tài khoản</a>
+                    <a class="navbar-brand" style="color:#ff6600 ;" href="danhsachtaikhoan.jsp">Danh sách tài khoản</a>
                     <a style="color:black  ;" href="themtaikhoan.jsp">Thêm tài khoản</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
@@ -230,20 +230,20 @@
                                             <tbody>
                                             <c:forEach items="${listUser}" var="u">
 
-                                            <tr>
-                                                <td class="pt-3-half" contenteditable="true">"${u.id}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${u.name}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${u.password}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${u.phone}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${u.email}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${u.address}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${u.active}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${u.date}"</td>
-                                                <td>
+                                                <tr>
+                                                    <td class="pt-3-half" contenteditable="true">"${u.id}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">"${u.name}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">"${u.password}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">"${u.phone}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">"${u.email}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">"${u.address}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">"${u.active}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">"${u.date}"</td>
+                                                    <td>
                               <span class="table-remove"><button type="button"
                                                                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-                                                </td>
-                                            </tr>
+                                                    </td>
+                                                </tr>
                                             </c:forEach>
                                             </tbody>
                                         </table>
@@ -317,22 +317,22 @@
             <li class="header-title">Images</li>
             <li class="active">
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-1.jpg" alt="">
+                    <img src="<c:url value='/csswebadmin/admin/img/sidebar-1.jpg'/>" alt="">
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-2.jpg" alt="">
+                    <img src="<c:url value='/csswebadmin/admin/img/sidebar-2.jpg'/>" alt="">
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-3.jpg" alt="">
+                    <img src="<c:url value='/csswebadmin/admin/img/sidebar-3.jpg'/>" alt="">
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-4.jpg" alt="">
+                    <img src="<c:url value='/csswebadmin/admin/img/sidebar-4.jpg'/>" alt="">
                 </a>
             </li>
             <li class="button-container">
@@ -367,48 +367,48 @@
     </div>
 </div>
 <!--   Core JS Files   -->
-<script src="<c:url value='../assets/js/core/jquery.min.js'/>"></script>
-<script src="<c:url value='../assets/js/core/popper.min.js'/>"></script>
-<script src="<c:url value='../assets/js/core/bootstrap-material-design.min.js'/>"></script>
-<script src="<c:url value='../assets/js/plugins/perfect-scrollbar.jquery.min.js' />"></script>
+<script src="<c:url value='/csswebadmin/admin/js/core/jquery.min.js'/>"></script>
+<script src="<c:url value='/csswebadmin/admin/js/core/popper.min.js'/>"></script>
+<script src="<c:url value='/csswebadmin/admin/js/core/bootstrap-material-design.min.js'/>"></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/perfect-scrollbar.jquery.min.js' />"></script>
 <!-- Plugin for the momentJs  -->
-<script src="<c:url value='../assets/js/plugins/moment.min.js'/>"></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/moment.min.js'/>"></script>
 <!--  Plugin for Sweet Alert -->
-<script src="<c:url value='../assets/js/plugins/sweetalert2.js' />"></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/sweetalert2.js' />"></script>
 <!-- Forms Validations Plugin -->
-<script src="<c:url value='../assets/js/plugins/jquery.validate.min.js'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/jquery.validate.min.js'/> "></script>
 <!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
-<script src="<c:url value='../assets/js/plugins/jquery.bootstrap-wizard.js' />"></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/jquery.bootstrap-wizard.js' />"></script>
 <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-<script src="<c:url value='../assets/js/plugins/bootstrap-selectpicker.js'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/bootstrap-selectpicker.js'/> "></script>
 <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
-<script src="<c:url value='../assets/js/plugins/bootstrap-datetimepicker.min.js'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/bootstrap-datetimepicker.min.js'/> "></script>
 <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
-<script src="<c:url value='../assets/js/plugins/jquery.dataTables.min.js'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/jquery.dataTables.min.js'/> "></script>
 <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
-<script src="<c:url value='../assets/js/plugins/bootstrap-tagsinput.js'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/bootstrap-tagsinput.js'/> "></script>
 <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
-<script src="<c:url value='../assets/js/plugins/jasny-bootstrap.min.js'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/jasny-bootstrap.min.js'/> "></script>
 <!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
-<script src="<c:url value='../assets/js/plugins/fullcalendar.min.js'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/fullcalendar.min.js'/> "></script>
 <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
-<script src="<c:url value='../assets/js/plugins/jquery-jvectormap.js'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/jquery-jvectormap.js'/> "></script>
 <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="<c:url value='../assets/js/plugins/nouislider.min.js'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/nouislider.min.js'/> "></script>
 <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
 <script src="<c:url value='https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js'/> "></script>
 <!-- Library for adding dinamically elements -->
-<script src="<c:url value='../assets/js/plugins/arrive.min.js'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/arrive.min.js'/> "></script>
 <!--  Google Maps Plugin    -->
 <script src="<c:url value='https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE'/> "></script>
 <!-- Chartist JS -->
-<script src="<c:url value='../assets/js/plugins/chartist.min.js' />"></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/chartist.min.js' />"></script>
 <!--  Notifications Plugin    -->
-<script src="<c:url value='../assets/js/plugins/bootstrap-notify.js'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/js/plugins/bootstrap-notify.js'/> "></script>
 <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="<c:url value='../assets/js/material-dashboard.js?v=2.1.2" type="text/javascript'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/js/material-dashboard.js?v=2.1.2" type="text/javascript'/> "></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
-<script src="<c:url value='../assets/demo/demo.js'/> "></script>
+<script src="<c:url value='/csswebadmin/admin/demo/demo.js'/> "></script>
 <script>
 
 
