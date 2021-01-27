@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+    <link rel="stylesheet" href="../font-awsome/css/all.all">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <p>p</p>
+    <p>p</p>
+    <p>p</p>
+    <p>p</p>
+    <p>p</p>
+    <p>p</p>
+    <p>p</p>
+    <p>p</p>
+    <p>p</p>
+    <div id="close3">a</div>
+
+
+    <div class="baongoai">
+        <form id="formchondiachi" onsubmit="return formdiachi()">
+            <div class="chondiachi">
+                <button id="close"><img src="close.png" alt=""> </button>
+                <h2>Địa chỉ giao hàng</h2>
+                <p class="donggoivanchuyen">Hãy chọn địa chỉ nhận hàng để được dự báo thời gian giao hàng cùng phí đóng
+                    gói, vận chuyển một cách
+                    chính
+                    xác nhất.</p>
+                <div id="dangnhapdechon">
+                    <p id="dn">Đăng nhập để chọn địa chỉ giao hàng</p>
+                </div>
+                <div class="duongke"></div>
+                <div class="hoac">hoặc</div>
+                <div class="chonkhuvuc">
+                    <p class="donggoivanchuyen">Chọn khu vực mua hàng</p>
+                </div>
+                <div class="tinh">
+                    <div class="trai">
+                        <p>Tỉnh/Thành phố</p>
+                    </div>
+                    <div class="phai">
+                        <input type="text" id="email1" name="email" placeholder="Nhập Tỉnh/Thành phố"
+                            class="Input-sc-17i9bto-0 bYlDgr" value="">
+                        <p class="baoloi" id="message1"></p>
+                    </div>
+                </div>
+                <div class="tinh">
+                    <div class="trai">
+                        <p>Quận/Huyện</p>
+                    </div>
+                    <div class="phai">
+                        <input type="text" id="email2" name="email" placeholder="Nhập Quận/Huyện"
+                            class="Input-sc-17i9bto-0 bYlDgr" value="">
+                        <p class="baoloi" id="message2"></p>
+                    </div>
+                </div>
+                <div class="tinh">
+                    <div class="trai">
+                        <p>Phường/Xã</p>
+                    </div>
+                    <div class="phai">
+                        <input type="text" id="email3" name="email" placeholder="Nhập Phường/xã"
+                            class="Input-sc-17i9bto-0 bYlDgr" value="">
+                        <p class="baoloi" id="message3"></p>
+                    </div>
+                </div>
+
+                <input type="submit" id="giaodendiachinay" value="Giao đến địa chỉ này">
+
+        </form>
+    </div>
+    <form id="formdangnhap" onsubmit="return formdangnhap1()">
+        <div class="dangnhap">
+
+
+            <button id="close"><img src="close.png" alt=""> </button>
+            <h2>Đăng nhập</h2>
+            <div class="tinh">
+                <div class="trai">
+                    <p>Email/SĐT</p>
+                </div>
+                <div class="phai">
+                    <input type="text" id="email4" name="email" placeholder="Nhập Email hoặc Số điện thoại"
+                        class="Input-sc-17i9bto-0 bYlDgr" value="">
+                    <p class="baoloi" id="message4"></p>
+                </div>
+            </div>
+            <div class="tinh">
+                <div class="trai">
+                    <p>Mật khẩu</p>
+                </div>
+                <div class="phai">
+                    <input type="password" id="email5" name="password" placeholder="Mật khẩu từ 6 đến 32 ký tự"
+                        class="Input-sc-17i9bto-0 bYlDgr" value="">
+                    <p class="baoloi" id="message5"></p>
+                </div>
+            </div>
+            <div class="quenmatkhau">
+
+            </div>
+            <div class="quenmatkhau">
+                <p>Quên mật khẩu? Nhấn vào <a id="day">đây</a> </p>
+            </div>
+
+            <input type="submit" id="buttondangnhap" value="Đăng nhập">
+            <div class="buttondangnhap2">
+                <p class="btndangnhap">Đăng nhập băng Facebook</p>
+            </div>
+            <div class="buttondangnhap3">
+                <p class="btndangnhap">Đăng nhập băng Google</p>
+            </div>
+            <div class="buttondangnhap4">
+                <p class="btndangnhap"> Đăng nhập bằng Zalo</p>
+            </div>
+
+            <p class="linkdangky">Bạn mới biết đến HKT? <a id="close1">Đăng ký </a> </p>
+        </div>
+
+    </form>
+
+    <div class="oquenmatkhau">
+        <form id="oquenmatkhau1" onsubmit="return oquenmatkhau2()">
+
+            <button id="close" style="margin-top:-35px"><img src="close.png" alt=""> </button>
+            <h2>Quên mật khẩu</h2>
+            <p>Vui lòng cung cấp email hoặc số điện thoại đăng nhập để lấy lại mật khẩu.</p>
+            <div class="tinh">
+                <div class="trai">
+                    <p>Email/SĐT</p>
+                </div>
+                <div class="phai">
+                    <input type="text" id="email6" name="email" placeholder="Nhập Email hoặc Số điện thoại"
+                        class="Input-sc-17i9bto-0 bYlDgr" value="">
+
+                </div>
+
+
+            </div>
+            <div class="baoloi1">
+                <p id="message6"></p>
+            </div>
+
+            <button class="buttondangnhap3">
+                Gửi
+            </button>
+        </form>
+
+    </div>
+    <div class="dangki">
+        <form id="formdangki" onsubmit="return formdangki1()">
+
+            <button id="close"><img src="close.png" alt=""> </button>
+            <h2>Đăng nhập</h2>
+            <div class="tinh">
+                <div class="trai">
+                    <p>Họ tên</p>
+                </div>
+                <div class="phai">
+                    <input type="text" id="email7" name="email" placeholder="Nhập họ tên"
+                        class="Input-sc-17i9bto-0 bYlDgr" value="">
+                    <p class="baoloi" id="message7"></p>
+                </div>
+            </div>
+            <div class="tinh">
+                <div class="trai">
+                    <p>SĐT</p>
+                </div>
+                <div class="phai">
+                    <input type="password" id="email8" name="password" placeholder="Nhập số điện thoại"
+                        class="Input-sc-17i9bto-0 bYlDgr" value="">
+                    <p class="baoloi" id="message8"></p>
+                </div>
+            </div>
+            <div class="tinh">
+                <div class="trai">
+                    <p>Mã xác thực</p>
+                </div>
+                <div class="phai">
+                    <input type="password" id="email9" name="password"
+                        placeholder="Nhập mã xác thực gửi tới số điện thoại" class="Input-sc-17i9bto-0 bYlDgr" value="">
+                    <p class="baoloi" id="message9"></p>
+                </div>
+            </div>
+            <div class="tinh">
+                <div class="trai">
+                    <p>Email</p>
+                </div>
+                <div class="phai">
+                    <input type="password" id="email10" name="password" placeholder="Nhập email"
+                        class="Input-sc-17i9bto-0 bYlDgr" value="">
+                    <p class="baoloi" id="message10"></p>
+                </div>
+
+            </div>
+            <div class="tinh">
+                <div class="trai">
+                    <p>Mật khẩu</p>
+                </div>
+                <div class="phai">
+                    <input type="password" id="email11" name="password" placeholder="Mật khẩu từ 6 đến 32 ký tự"
+                        class="Input-sc-17i9bto-0 bYlDgr" value="">
+                    <p class="baoloi" id="message11"></p>
+                </div>
+            </div>
+            <div class="quenmatkhau">
+
+            </div>
+
+
+
+            <input type="submit" class="buttondangki" value="Đăng kí">
+        </form>
+
+
+    </div>
+    </div>
+
+</body>
+
+</html>

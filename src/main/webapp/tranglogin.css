@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.85;
+}
+.chondiachi{
+   
+    width: 500px;
+    height: 630px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 500px;
+    margin-top: 50px;
+    z-index:99999;/*đặt z-index để nó nổi bật và chồng lên phần tử khác trong trang*/
+    border: 15px #8080801a solid;
+    border-radius: 7px;
+    display: none;
+    position: absolute;
+    position: fixed;
+}
+.baoloi{
+    color: red;
+   
+    margin-left: -150px;
+}
+#close{
+    float: right;
+    margin-top: -20px;
+    margin-right: -24px;
+    background-color: white;
+    /* color: white; */
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    color: #808080b8;
+}
+#custom_html-8{
+    margin-top: 40px;
+}
+.dangnhap{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+ 
+    border: 15px #8080801a solid;
+    border-radius: 7px;
+   
+    margin-top: -100px;
+
+    z-index:99999;/*đặt z-index để nó nổi bật và chồng lên phần tử khác trong trang*/
+    position:absolute;
+    margin-left: 500px;
+    margin-top: 50px;
+    position: fixed;
+}
+.titletle{
+    text-align: center;
+}
+.oquenmatkhau{
+    width: 500px;
+    height: 330px;
+    background-color:white;
+    border: 15px #8080801a solid;
+    border-radius: 7px;
+
+    display: none;
+    z-index:99999;/*đặt z-index để nó nổi bật và chồng lên phần tử khác trong trang*/
+    position:absolute;
+    margin-left: 500px;
+    margin-top: 50px;
+    position: fixed;
+}
+.oquenmatkhau p{
+    margin-left: 10px;
+}
+
+.dangki{
+    width: 500px;
+    height: 550px;
+    background-color:white;
+    position: fixed;
+    border: 15px #8080801a solid;
+    border-radius: 7px;
+   
+    display: none;
+    z-index:99999;/*đặt z-index để nó nổi bật và chồng lên phần tử khác trong trang*/
+    position:absolute;
+    margin-left: 500px;
+    position: fixed;
+    margin-top: 50px;
+}
+#over{
+    background: rgba(0, 0, 0, 0.53);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  
+    z-index: 999;
+    display:none;
+}
+ h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#dangnhapdechon {
+    width: 260px;
+   padding: 12px;
+    background-color: rgb(253, 216, 53);
+    text-align: center;
+   border-radius: 4px;
+   margin: auto;
+   margin-top: 20px;
+   cursor: pointer;
+   height: 45px;
+
+   margin-bottom: 20px;
+    
+}
+#dangnhapdechon:hover{
+    opacity: 0.85;
+}
+.duongke{
+    border: 0.1px rgb(85 79 79 / 20%) solid;
+    margin-bottom: -10px;
+}
+.hoac{
+   
+ 
+   
+    text-align: center;
+    margin: auto;
+    width: 80px;
+    background-color:rgb(255, 255, 255) ;
+}
+.chonkhuvuc{
+    margin-top: 30px;
+
+}
+.tinh .trai{
+    width: 50%;
+    float: left;
+    margin-left: 62px;
+    margin-top: 13px
+}
+.tinh .phai{
+    width: 50px;
+    float: right;
+    display: block;
+}
+.tinh .phai input{
+    width: 245px;
+    height: 40px;
+    margin-left: -158px;
+    border-radius: 4px;
+    border: 0.5px gray solid;
+    padding-left: 10px;
+
+}
+.baoloi1{
+    height: 30px;
+    width: 100%;
+    margin-left: 184px;
+    color: red;
+    margin-top: -25px;
+}
+.tinh{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+#giaodendiachinay {
+    width: 260px;
+   padding: 12px;
+    background-color: rgb(255, 66, 78);
+    text-align: center;
+   border-radius: 4px;
+   margin: auto;
+   margin-top: 20px;
+   cursor: pointer;
+   margin-left: 110px;
+   border: none;
+margin-bottom: 20px;
+color: white;
+
+    
+}
+.btndangnhap{
+    margin-top: 5px;
+}
+#giaodendiachinay:hover{
+    opacity: 0.85;
+}
+.dangnhap input{
+    width: 80%;
+    margin: auto;
+    height: 40px;
+}
+#day{
+  
+    text-decoration: none;
+    color:  rgb(255, 66, 78);
+}
+.quenmatkhau{
+    margin-top: 50px;
+    margin-left: 80px;
+    width: 65%;
+    margin: auto;
+ 
+}
+
+#buttondangnhap{
+    border-radius: 4px;
+
+    width: 63%;
+    height: 42px;
+    /* margin: auto; */
+    background-color: rgb(253, 216, 53);
+    border: none;
+    margin-left: 95px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buttondangnhap2{
+
+    padding-top: 7px;
+    border-radius: 4px;
+    color: white;
+
+    width: 63%;
+    height: 42px;
+    /* margin: auto; */
+    background-color: rgb(59, 89, 152);
+    border: none;
+    margin-left: 95px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buttondangnhap3{
+    color: white;
+    border-radius: 4px;
+    padding-top: 7px;
+    width: 63%;
+    height: 42px;
+    /* margin: auto; */
+    background-color: rgb(223, 74, 50);
+    border: none;
+    margin-left: 95px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buttondangnhap4{
+    color: white;
+    border-radius: 4px;
+    padding-top: 7px;
+    width: 63%;
+    height: 42px;
+    /* margin: auto; */
+    background-color:rgb(15, 142, 221);
+    border: none;
+    margin-left: 95px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icon{
+    float: left;
+    font-size: 20px;
+    background-color: violet;
+}
+.linkdangky{
+    text-align: center;
+    margin-top: 20px;
+}
+#close1{
+   
+    color:rgb(255, 66, 78) ;
+}
+.buttondangki{
+    color: white;
+    border-radius: 4px;
+
+    width: 63%;
+    height: 40px;
+    /* margin: auto; */
+    background-color:rgb(255, 66, 78);
+    border: none;
+    margin-left: 95px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.donggoivanchuyen{
+    margin-left: 15px;
+    color: #808080b8;
+}
+
+#closese{
+    float: right;
+    margin-top: -41px;
+    margin-right: -24px;
+    background-color: white;
+    /* color: white; */
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    color: #808080b8 
+}

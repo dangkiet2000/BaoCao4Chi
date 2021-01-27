@@ -1,0 +1,162 @@
+.nav-tabs.nav-tabs-left {   
+    float: left;    
+    border-right: 0;
+    }
+    .nav-tabs.nav-tabs-left li a {  
+    margin-right: -1px; 
+    border-radius: 4px 0 0 4px; 
+    border-right: none;
+    }
+    .nav-tabs.nav-tabs-right {  
+    float: right;   
+    border-left: 0;
+    }
+    .nav-tabs.nav-tabs-right li a { 
+    margin-left: -1px;  
+    border-radius: 0 4px 4px 0; 
+    border-left: none;  
+    text-align: right;
+    }
+    .nav-tabs.nav-centered li a {   
+    text-align: left;
+    }
+    .nav-tabs.nav-tabs-left, .nav-tabs.nav-tabs-right { 
+    border-bottom: 0;   
+    max-width: 33%;
+    }
+    .nav-tabs.nav-tabs-left li, .nav-tabs.nav-tabs-right li {   
+    float: none;    
+    margin: 0;
+    }
+    .nav-tabs.nav-tabs-left li a, .nav-tabs.nav-tabs-right li a {   
+    border: 1px solid #CCC; 
+    background-color: rgb(146, 143, 143); 
+    color: #FFF;
+    }
+    .nav-tabs.nav-tabs-left li a:hover, .nav-tabs.nav-tabs-right li a:hover {   
+    background-color: rgb(75, 72, 72); 
+    border-color: #949497;  
+    color: #FFF;
+    }
+    .nav-tabs.nav-tabs-left li.active a, .nav-tabs.nav-tabs-right li.active a, .nav-tabs.nav-tabs-left li.active .glyphicon, .nav-tabs.nav-tabs-right li.active .glyphicon {    
+    color: #333;
+    }
+    .nav-tabs.nav-tabs-left li.active a:hover, .nav-tabs.nav-tabs-right li.active a:hover, .nav-tabs.nav-tabs-left li.active .glyphicon:hover, .nav-tabs.nav-tabs-right li.active .glyphicon:hover {    
+    color: #444;
+    }
+    .nav-tabs.nav-tabs-left li.active a, .nav-tabs.nav-tabs-right li.active a, .nav-tabs.nav-tabs-left li.active a:hover, .nav-tabs.nav-tabs-right li.active a:hover, .nav-tabs.nav-tabs-left li.active a:focus, .nav-tabs.nav-tabs-right li.active a:focus {   
+    background-color:#F8F8F8;   
+    border-color: #d5d5d6;
+    }
+    .nav-tabs.nav-tabs-left li:not(:last-of-type), .nav-tabs.nav-tabs-right li:not(:last-of-type) { 
+    margin-bottom: -41px;
+    }
+    .tab-content.side-tabs .tab-pane {  
+    display: none;  
+    padding: 1.0rem;    
+    overflow-y: auto;   
+    border: 1px solid #a1a1a4;
+    }
+    .tab-content.side-tabs-left {   
+    margin-left: 45px;
+    }
+    .tab-content.side-tabs-left .tab-pane { 
+    border-radius: 0 4px 4px 0;
+    }
+    .tab-content.side-tabs-left .tab-pane.active {  
+    display: block; 
+    background-color: #F8F8F8;  
+    border-color: #d5d5d6;  
+    color: #333;    
+    font-weight: 300;   
+    letter-spacing: 0.1em;
+    }
+    .tab-content.side-tabs-right {  
+    margin-right: 45px;
+    }
+    .tab-content.side-tabs-right .tab-pane {    
+    border-radius: 4px 0 0 4px;
+    }
+    main > .row:not(:first-of-type) { 
+    margin-top: 1.1em;
+    }
+    col.time, col.repname { 
+    width: 12em;
+    }
+    col.did {   width: 9em;}
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+      
+      input[type=submit] {
+        background-color: #f38236;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+          margin-left: 200px;
+          margin-top: 30px;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #ff6600;
+      }
+      
+      .containerk {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      
+      .col-25 {
+        float: left;
+        width: 200px;
+        margin-top: 6px;
+      }
+      
+      .col-75 {
+        float: left;
+        width: 400px;
+        margin-top: 6px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }

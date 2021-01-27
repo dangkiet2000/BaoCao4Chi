@@ -1,0 +1,1082 @@
+<!--
+=========================================================
+Material Dashboard - v2.1.2
+=========================================================
+
+Product Page: https://www.creative-tim.com/product/material-dashboard
+Copyright 2020 Creative Tim (https://www.creative-tim.com)
+Coded by Creative Tim
+
+=========================================================
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://www.prepbootstrap.com/Content/shieldui-lite/dist/css/light/all.min.css" />
+<script type="text/javascript" src="http://www.prepbootstrap.com/Content/shieldui-lite/dist/js/shieldui-lite-all.min.js"></script>
+
+<script type="text/javascript" src="http://www.prepbootstrap.com/Content/data/shortGridData.js"></script>
+  <script src="extensions/editable/bootstrap-table-editable.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/DataTables-1.10.22/extensions/Editor-1.9.5/css/editor.jqueryui.css">
+
+  <link rel="stylesheet" href="https://code.jquery.com/jquery-3.5.1.js">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js">
+  <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js">
+
+
+  <script type="text/javascript" src="/DataTables-1.10.22/extensions/Editor-1.9.5/js/dataTables.editor.js"></script>
+  <script type="text/javascript" src="/DataTables-1.10.22/extensions/Editor-1.9.5/js/editor.jqueryui.js"></script>
+
+
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Material Dashboard by Creative Tim
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          ADMIN
+        </a></div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item  ">
+            <a class="nav-link" href="./quanlydonhang.html">
+              <i class="material-icons">dashboard</i>
+              <p>Quản lý đơn hàng</p>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./danhsachtaikhoan.html">
+              <i class="material-icons">person</i>
+              <p>Quản lý tài khoản</p>
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link" href="./danhsachadmin.html">
+              <i class="material-icons">person</i>
+              <p>Quản lý admin</p>
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link" href="./danhsachsanpham.html">
+              <i class="material-icons">content_paste</i>
+              <p>Quản lý sản phẩm</p>
+            </a>
+          </li>
+          <li class="nav-item   ">
+            <a class="nav-link" href="./danhsachblog.html">
+              <i class="material-icons">content_paste</i>
+              <p>Quản lý blog</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./danhsachtheloai.html">
+              <i class="material-icons">library_books</i>
+              <p>Quản lý danh mục</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./quanlythanhtoan.html">
+              <i class="material-icons">bubble_chart</i>
+              <p>Quản lý thanh toán</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./quanlybinhluan.html">
+              <i class="fas fa-comments"></i>
+              <p>Quản lý bình luận</p>
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link" href="./danhsachhangsanxuat.html">
+              <i class="fab fa-product-hunt"></i>
+              <p>Quản lý nhà cung cấp</p>
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link" href="./quanlydanhgia.html">
+              <i class="fab fa-product-hunt"></i>
+              <p>Quản lý đánh giá</p>
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link" href="./dashboard.html">
+              <i class="material-icons">dashboard</i>
+              <p>Xem thống kê</p>
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link" href="./user.html">
+              <i class="material-icons">dashboard</i>
+              <p>Thông tin cá nhân</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" style="color:#ff6600 ;" href="danhsachtaikhoan.html">Danh sách tài khoản</a>
+            <a style="color:black  ;" href="themtaikhoan.html">Thêm tài khoản</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <form class="navbar-form">
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                  <i class="material-iconss">search</i>
+                  <div class="ripple-container"></div>
+                </button>
+              </div>
+            </form>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:;">
+                  <i class="material-icons">dashboard</i>
+                  <p class="d-lg-none d-md-block">
+                    Stats
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">notifications</i>
+                  <span class="notification">5</span>
+                  <p class="d-lg-none d-md-block">
+                    Some Actions
+                  </p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Mike John responded to your email</a>
+                  <a class="dropdown-item" href="#">You have 5 new tasks</a>
+                  <a class="dropdown-item" href="#">You're now friend with Andrew</a>
+                  <a class="dropdown-item" href="#">Another Notification</a>
+                  <a class="dropdown-item" href="#">Another One</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">person</i>
+                  <p class="d-lg-none d-md-block">
+                    Account
+                  </p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Log out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Danh sách tài khoản</h4>
+              
+
+                </div>
+                <!-- Editable table -->
+                <!-- Editable table -->
+                <div class="card">
+                  <div class="wrapper-editor">
+
+                    <div class="block my-4">
+                      <div class="d-flex justify-content-center">
+                        <p class="h5 text-primary createShowP">0 row selected</p>
+                      </div>
+                    </div>
+
+                    <div class="row d-flex justify-content-center modalWrapper">
+                      <div class="modal fade addNewInputs" id="modalAdd" tabindex="-1" role="dialog"
+                        aria-labelledby="modalAdd" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header text-center">
+                              <h4 class="modal-title w-100 font-weight-bold text-primary ml-5">Add new form</h4>
+                              <button type="button" class="close text-primary" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body mx-3">
+                              <div class="md-form mb-5">
+                                <input type="text" id="inputName" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="inputName">Name</label>
+                              </div>
+
+                              <div class="md-form mb-5">
+                                <input type="text" id="inputPosition" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="inputPosition">Position</label>
+                              </div>
+
+                              <div class="md-form mb-5">
+                                <input type="text" id="inputOfficeInput" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="inputOfficeInput">Office</label>
+                              </div>
+
+                              <div class="md-form mb-5">
+                                <input type="text" id="inputAge" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="inputAge">Age</label>
+                              </div>
+
+                              <div class="md-form mb-5">
+                                <input type="date" id="inputDate" class="form-control" placeholder="Select Date">
+                                <label data-error="wrong" data-success="right" for="inputDate"></label>
+                              </div>
+
+                              <div class="md-form mb-5">
+                                <input type="text" id="inputSalary" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="inputSalary">Salary</label>
+                              </div>
+
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center buttonAddFormWrapper">
+                              <button class="btn btn-outline-primary btn-block buttonAdd" data-dismiss="modal">Add form
+                                <i class="fas fa-paper-plane-o ml-1"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <a href="" class="btn btn-info btn-rounded btn-sm" data-toggle="modal"
+                          data-target="#modalAdd">Add<i class="fas fa-plus-square ml-1"></i></a>
+                      </div>
+
+                      <div class="modal fade modalEditClass" id="modalEdit" tabindex="-1" role="dialog"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header text-center">
+                              <h4 class="modal-title w-100 font-weight-bold text-secondary ml-5">Edit form</h4>
+                              <button type="button" class="close text-secondary" data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body mx-3">
+                              <div class="md-form mb-5">
+                                <input type="text" id="formNameEdit" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="formNameEdit">Name</label>
+                              </div>
+
+                              <div class="md-form mb-5">
+                                <input type="text" id="formPositionEdit" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="formPositionEdit">Position</label>
+                              </div>
+
+                              <div class="md-form mb-5">
+                                <input type="text" id="formOfficeEdit" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="formOfficeEdit">Office</label>
+                              </div>
+
+                              <div class="md-form mb-5">
+                                <input type="text" id="formAgeEdit" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="formAgeEdit">Age</label>
+                              </div>
+
+                              <div class="md-form mb-5">
+                                <input type="text" id="formDateEdit" class="form-control datepicker">
+                                <label data-error="wrong" data-success="right" for="formDateEdit">Date</label>
+                              </div>
+
+                              <div class="md-form mb-5">
+                                <input type="text" id="formSalaryEdit" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="formSalaryEdit">Salary</label>
+                              </div>
+
+
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center editInsideWrapper">
+                              <button class="btn btn-outline-secondary btn-block editInside" data-dismiss="modal">Edit
+                                form
+                                <i class="fas fa-paper-plane-o ml-1"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="text-center buttonEditWrapper">
+                        <button class="btn btn-info btn-rounded btn-sm buttonEdit" data-toggle="modal"
+                          data-target="#modalEdit" disabled>Edit<i class="fas fa-pencil-square-o ml-1"></i></a>
+                      </div>
+
+                      <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modalDelete"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header text-center">
+                              <h4 class="modal-title w-100 font-weight-bold ml-5 text-danger">Delete</h4>
+                              <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body mx-3">
+                              <p class="text-center h4">Are you sure to delete selected row?</p>
+
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center deleteButtonsWrapper">
+                              <button type="button" class="btn btn-danger btnYesClass" id="btnYes"
+                                data-dismiss="modal">Yes</button>
+                              <button type="button" class="btn btn-primary btnNoClass" id="btnNo"
+                                data-dismiss="modal">No</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <button class="btn btn-danger btn-sm btn-rounded buttonDelete" data-toggle="modal" disabled
+                          data-target="#modalDelete" disabled>Delete<i class="fas fa-times ml-1"></i></a>
+                      </div>
+                    </div>
+
+                    <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                      <thead>
+                        <tr>
+                          <th class="th-sm">Name
+
+                          </th>
+                          <th class="th-sm">Position
+
+                          </th>
+                          <th class="th-sm">Office
+
+                          </th>
+                          <th class="th-sm">Age
+
+                          </th>
+                          <th class="th-sm">Start date
+
+                          </th>
+                          <th class="th-sm">Salary
+
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Tiger Nixon</td>
+                          <td>System Architect</td>
+                          <td>Edinburgh</td>
+                          <td>61</td>
+                          <td>2011/04/25</td>
+                          <td>$320,800</td>
+                        </tr>
+                        <tr>
+                          <td>Garrett Winters</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>63</td>
+                          <td>2011/07/25</td>
+                          <td>$170,750</td>
+                        </tr>
+                        <tr>
+                          <td>Ashton Cox</td>
+                          <td>Junior Technical Author</td>
+                          <td>San Francisco</td>
+                          <td>66</td>
+                          <td>2009/01/12</td>
+                          <td>$86,000</td>
+                        </tr>
+                        <tr>
+                          <td>Cedric Kelly</td>
+                          <td>Senior Javascript Developer</td>
+                          <td>Edinburgh</td>
+                          <td>22</td>
+                          <td>2012/03/29</td>
+                          <td>$433,060</td>
+                        </tr>
+                        <tr>
+                          <td>Airi Satou</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>33</td>
+                          <td>2008/11/28</td>
+                          <td>$162,700</td>
+                        </tr>
+                        <tr>
+                          <td>Brielle Williamson</td>
+                          <td>Integration Specialist</td>
+                          <td>New York</td>
+                          <td>61</td>
+                          <td>2012/12/02</td>
+                          <td>$372,000</td>
+                        </tr>
+                        <tr>
+                          <td>Herrod Chandler</td>
+                          <td>Sales Assistant</td>
+                          <td>San Francisco</td>
+                          <td>59</td>
+                          <td>2012/08/06</td>
+                          <td>$137,500</td>
+                        </tr>
+                        <tr>
+                          <td>Rhona Davidson</td>
+                          <td>Integration Specialist</td>
+                          <td>Tokyo</td>
+                          <td>55</td>
+                          <td>2010/10/14</td>
+                          <td>$327,900</td>
+                        </tr>
+                        <tr>
+                          <td>Colleen Hurst</td>
+                          <td>Javascript Developer</td>
+                          <td>San Francisco</td>
+                          <td>39</td>
+                          <td>2009/09/15</td>
+                          <td>$205,500</td>
+                        </tr>
+                        <tr>
+                          <td>Sonya Frost</td>
+                          <td>Software Engineer</td>
+                          <td>Edinburgh</td>
+                          <td>23</td>
+                          <td>2008/12/13</td>
+                          <td>$103,600</td>
+                        </tr>
+                        <tr>
+                          <td>Jena Gaines</td>
+                          <td>Office Manager</td>
+                          <td>London</td>
+                          <td>30</td>
+                          <td>2008/12/19</td>
+                          <td>$90,560</td>
+                        </tr>
+                        <tr>
+                          <td>Quinn Flynn</td>
+                          <td>Support Lead</td>
+                          <td>Edinburgh</td>
+                          <td>22</td>
+                          <td>2013/03/03</td>
+                          <td>$342,000</td>
+                        </tr>
+                        <tr>
+                          <td>Charde Marshall</td>
+                          <td>Regional Director</td>
+                          <td>San Francisco</td>
+                          <td>36</td>
+                          <td>2008/10/16</td>
+                          <td>$470,600</td>
+                        </tr>
+                        <tr>
+                          <td>Haley Kennedy</td>
+                          <td>Senior Marketing Designer</td>
+                          <td>London</td>
+                          <td>43</td>
+                          <td>2012/12/18</td>
+                          <td>$313,500</td>
+                        </tr>
+                        <tr>
+                          <td>Tatyana Fitzpatrick</td>
+                          <td>Regional Director</td>
+                          <td>London</td>
+                          <td>19</td>
+                          <td>2010/03/17</td>
+                          <td>$385,750</td>
+                        </tr>
+                        <tr>
+                          <td>Michael Silva</td>
+                          <td>Marketing Designer</td>
+                          <td>London</td>
+                          <td>66</td>
+                          <td>2012/11/27</td>
+                          <td>$198,500</td>
+                        </tr>
+                        <tr>
+                          <td>Paul Byrd</td>
+                          <td>Chief Financial Officer (CFO)</td>
+                          <td>New York</td>
+                          <td>64</td>
+                          <td>2010/06/09</td>
+                          <td>$725,000</td>
+                        </tr>
+                        <tr>
+                          <td>Gloria Little</td>
+                          <td>Systems Administrator</td>
+                          <td>New York</td>
+                          <td>59</td>
+                          <td>2009/04/10</td>
+                          <td>$237,500</td>
+                        </tr>
+                        <tr>
+                          <td>Bradley Greer</td>
+                          <td>Software Engineer</td>
+                          <td>London</td>
+                          <td>41</td>
+                          <td>2012/10/13</td>
+                          <td>$132,000</td>
+                        </tr>
+                        <tr>
+                          <td>Dai Rios</td>
+                          <td>Personnel Lead</td>
+                          <td>Edinburgh</td>
+                          <td>35</td>
+                          <td>2012/09/26</td>
+                          <td>$217,500</td>
+                        </tr>
+                        <tr>
+                          <td>Jenette Caldwell</td>
+                          <td>Development Lead</td>
+                          <td>New York</td>
+                          <td>30</td>
+                          <td>2011/09/03</td>
+                          <td>$345,000</td>
+                        </tr>
+                        <tr>
+                          <td>Yuri Berry</td>
+                          <td>Chief Marketing Officer (CMO)</td>
+                          <td>New York</td>
+                          <td>40</td>
+                          <td>2009/06/25</td>
+                          <td>$675,000</td>
+                        </tr>
+                        <tr>
+                          <td>Caesar Vance</td>
+                          <td>Pre-Sales Support</td>
+                          <td>New York</td>
+                          <td>21</td>
+                          <td>2011/12/12</td>
+                          <td>$106,450</td>
+                        </tr>
+                        <tr>
+                          <td>Doris Wilder</td>
+                          <td>Sales Assistant</td>
+                          <td>Sidney</td>
+                          <td>23</td>
+                          <td>2010/09/20</td>
+                          <td>$85,600</td>
+                        </tr>
+                        <tr>
+                          <td>Angelica Ramos</td>
+                          <td>Chief Executive Officer (CEO)</td>
+                          <td>London</td>
+                          <td>47</td>
+                          <td>2009/10/09</td>
+                          <td>$1,200,000</td>
+                        </tr>
+                        <tr>
+                          <td>Gavin Joyce</td>
+                          <td>Developer</td>
+                          <td>Edinburgh</td>
+                          <td>42</td>
+                          <td>2010/12/22</td>
+                          <td>$92,575</td>
+                        </tr>
+                        <tr>
+                          <td>Jennifer Chang</td>
+                          <td>Regional Director</td>
+                          <td>Singapore</td>
+                          <td>28</td>
+                          <td>2010/11/14</td>
+                          <td>$357,650</td>
+                        </tr>
+                        <tr>
+                          <td>Brenden Wagner</td>
+                          <td>Software Engineer</td>
+                          <td>San Francisco</td>
+                          <td>28</td>
+                          <td>2011/06/07</td>
+                          <td>$206,850</td>
+                        </tr>
+                        <tr>
+                          <td>Fiona Green</td>
+                          <td>Chief Operating Officer (COO)</td>
+                          <td>San Francisco</td>
+                          <td>48</td>
+                          <td>2010/03/11</td>
+                          <td>$850,000</td>
+                        </tr>
+                        <tr>
+                          <td>Shou Itou</td>
+                          <td>Regional Marketing</td>
+                          <td>Tokyo</td>
+                          <td>20</td>
+                          <td>2011/08/14</td>
+                          <td>$163,000</td>
+                        </tr>
+                        <tr>
+                          <td>Michelle House</td>
+                          <td>Integration Specialist</td>
+                          <td>Sidney</td>
+                          <td>37</td>
+                          <td>2011/06/02</td>
+                          <td>$95,400</td>
+                        </tr>
+                        <tr>
+                          <td>Suki Burks</td>
+                          <td>Developer</td>
+                          <td>London</td>
+                          <td>53</td>
+                          <td>2009/10/22</td>
+                          <td>$114,500</td>
+                        </tr>
+                        <tr>
+                          <td>Prescott Bartlett</td>
+                          <td>Technical Author</td>
+                          <td>London</td>
+                          <td>27</td>
+                          <td>2011/05/07</td>
+                          <td>$145,000</td>
+                        </tr>
+                        <tr>
+                          <td>Gavin Cortez</td>
+                          <td>Team Leader</td>
+                          <td>San Francisco</td>
+                          <td>22</td>
+                          <td>2008/10/26</td>
+                          <td>$235,500</td>
+                        </tr>
+                        <tr>
+                          <td>Martena Mccray</td>
+                          <td>Post-Sales support</td>
+                          <td>Edinburgh</td>
+                          <td>46</td>
+                          <td>2011/03/09</td>
+                          <td>$324,050</td>
+                        </tr>
+                        <tr>
+                          <td>Unity Butler</td>
+                          <td>Marketing Designer</td>
+                          <td>San Francisco</td>
+                          <td>47</td>
+                          <td>2009/12/09</td>
+                          <td>$85,675</td>
+                        </tr>
+                        <tr>
+                          <td>Howard Hatfield</td>
+                          <td>Office Manager</td>
+                          <td>San Francisco</td>
+                          <td>51</td>
+                          <td>2008/12/16</td>
+                          <td>$164,500</td>
+                        </tr>
+                        <tr>
+                          <td>Hope Fuentes</td>
+                          <td>Secretary</td>
+                          <td>San Francisco</td>
+                          <td>41</td>
+                          <td>2010/02/12</td>
+                          <td>$109,850</td>
+                        </tr>
+                        <tr>
+                          <td>Vivian Harrell</td>
+                          <td>Financial Controller</td>
+                          <td>San Francisco</td>
+                          <td>62</td>
+                          <td>2009/02/14</td>
+                          <td>$452,500</td>
+                        </tr>
+                        <tr>
+                          <td>Timothy Mooney</td>
+                          <td>Office Manager</td>
+                          <td>London</td>
+                          <td>37</td>
+                          <td>2008/12/11</td>
+                          <td>$136,200</td>
+                        </tr>
+                        <tr>
+                          <td>Jackson Bradshaw</td>
+                          <td>Director</td>
+                          <td>New York</td>
+                          <td>65</td>
+                          <td>2008/09/26</td>
+                          <td>$645,750</td>
+                        </tr>
+                        <tr>
+                          <td>Olivia Liang</td>
+                          <td>Support Engineer</td>
+                          <td>Singapore</td>
+                          <td>64</td>
+                          <td>2011/02/03</td>
+                          <td>$234,500</td>
+                        </tr>
+                        <tr>
+                          <td>Bruno Nash</td>
+                          <td>Software Engineer</td>
+                          <td>London</td>
+                          <td>38</td>
+                          <td>2011/05/03</td>
+                          <td>$163,500</td>
+                        </tr>
+                        <tr>
+                          <td>Sakura Yamamoto</td>
+                          <td>Support Engineer</td>
+                          <td>Tokyo</td>
+                          <td>37</td>
+                          <td>2009/08/19</td>
+                          <td>$139,575</td>
+                        </tr>
+                        <tr>
+                          <td>Thor Walton</td>
+                          <td>Developer</td>
+                          <td>New York</td>
+                          <td>61</td>
+                          <td>2013/08/11</td>
+                          <td>$98,540</td>
+                        </tr>
+                        <tr>
+                          <td>Finn Camacho</td>
+                          <td>Support Engineer</td>
+                          <td>San Francisco</td>
+                          <td>47</td>
+                          <td>2009/07/07</td>
+                          <td>$87,500</td>
+                        </tr>
+                        <tr>
+                          <td>Serge Baldwin</td>
+                          <td>Data Coordinator</td>
+                          <td>Singapore</td>
+                          <td>64</td>
+                          <td>2012/04/09</td>
+                          <td>$138,575</td>
+                        </tr>
+                        <tr>
+                          <td>Zenaida Frank</td>
+                          <td>Software Engineer</td>
+                          <td>New York</td>
+                          <td>63</td>
+                          <td>2010/01/04</td>
+                          <td>$125,250</td>
+                        </tr>
+                        <tr>
+                          <td>Zorita Serrano</td>
+                          <td>Software Engineer</td>
+                          <td>San Francisco</td>
+                          <td>56</td>
+                          <td>2012/06/01</td>
+                          <td>$115,000</td>
+                        </tr>
+                        <tr>
+                          <td>Jennifer Acosta</td>
+                          <td>Junior Javascript Developer</td>
+                          <td>Edinburgh</td>
+                          <td>43</td>
+                          <td>2013/02/01</td>
+                          <td>$75,650</td>
+                        </tr>
+                        <tr>
+                          <td>Cara Stevens</td>
+                          <td>Sales Assistant</td>
+                          <td>New York</td>
+                          <td>46</td>
+                          <td>2011/12/06</td>
+                          <td>$145,600</td>
+                        </tr>
+                        <tr>
+                          <td>Hermione Butler</td>
+                          <td>Regional Director</td>
+                          <td>London</td>
+                          <td>47</td>
+                          <td>2011/03/21</td>
+                          <td>$356,250</td>
+                        </tr>
+                        <tr>
+                          <td>Lael Greer</td>
+                          <td>Systems Administrator</td>
+                          <td>London</td>
+                          <td>21</td>
+                          <td>2009/02/27</td>
+                          <td>$103,500</td>
+                        </tr>
+                        <tr>
+                          <td>Jonas Alexander</td>
+                          <td>Developer</td>
+                          <td>San Francisco</td>
+                          <td>30</td>
+                          <td>2010/07/14</td>
+                          <td>$86,500</td>
+                        </tr>
+                        <tr>
+                          <td>Shad Decker</td>
+                          <td>Regional Director</td>
+                          <td>Edinburgh</td>
+                          <td>51</td>
+                          <td>2008/11/13</td>
+                          <td>$183,000</td>
+                        </tr>
+                        <tr>
+                          <td>Michael Bruce</td>
+                          <td>Javascript Developer</td>
+                          <td>Singapore</td>
+                          <td>29</td>
+                          <td>2011/06/27</td>
+                          <td>$183,000</td>
+                        </tr>
+                        <tr>
+                          <td>Donna Snider</td>
+                          <td>Customer Support</td>
+                          <td>New York</td>
+                          <td>27</td>
+                          <td>2011/01/25</td>
+                          <td>$112,000</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th>Name
+                          </th>
+                          <th>Position
+                          </th>
+                          <th>Office
+                          </th>
+                          <th>Age
+                          </th>
+                          <th>Start date
+                          </th>
+                          <th>Salary
+                          </th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+                <!-- Editable table -->
+                <!-- Editable table -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a href="https://www.creative-tim.com">
+                  Creative Tim
+                </a>
+              </li>
+              <li>
+                <a href="https://creative-tim.com/presentation">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="http://blog.creative-tim.com">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="https://www.creative-tim.com/license">
+                  Licenses
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, made with <i class="material-icons">favorite</i> by
+            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div class="fixed-plugin">
+    <div class="dropdown show-dropdown">
+      <a href="#" data-toggle="dropdown">
+        <i class="fa fa-cog fa-2x"> </i>
+      </a>
+      <ul class="dropdown-menu">
+        <li class="header-title"> Sidebar Filters</li>
+        <li class="adjustments-line">
+          <a href="javascript:void(0)" class="switch-trigger active-color">
+            <div class="badge-colors ml-auto mr-auto">
+              <span class="badge filter badge-purple" data-color="purple"></span>
+              <span class="badge filter badge-azure" data-color="azure"></span>
+              <span class="badge filter badge-green" data-color="green"></span>
+              <span class="badge filter badge-warning" data-color="orange"></span>
+              <span class="badge filter badge-danger" data-color="danger"></span>
+              <span class="badge filter badge-rose active" data-color="rose"></span>
+            </div>
+            <div class="clearfix"></div>
+          </a>
+        </li>
+        <li class="header-title">Images</li>
+        <li class="active">
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="../assets/img/sidebar-1.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="../assets/img/sidebar-2.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="../assets/img/sidebar-3.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="../assets/img/sidebar-4.jpg" alt="">
+          </a>
+        </li>
+        <li class="button-container">
+          <a href="https://www.creative-tim.com/product/material-dashboard" target="_blank"
+            class="btn btn-primary btn-block">Free Download</a>
+        </li>
+        <!-- <li class="header-title">Want more components?</li>
+            <li class="button-container">
+                <a href="https://www.creative-tim.com/product/material-dashboard-pro" target="_blank" class="btn btn-warning btn-block">
+                  Get the pro version
+                </a>
+            </li> -->
+        <li class="button-container">
+          <a href="https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html"
+            target="_blank" class="btn btn-default btn-block">
+            View Documentation
+          </a>
+        </li>
+        <li class="button-container github-star">
+          <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard"
+            data-icon="octicon-star" data-size="large" data-show-count="true"
+            aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+        </li>
+        <li class="header-title">Thank you for 95 shares!</li>
+        <li class="button-container text-center">
+          <button id="twitter" class="btn btn-round btn-twitter"><i class="fa fa-twitter"></i> &middot; 45</button>
+          <button id="facebook" class="btn btn-round btn-facebook"><i class="fa fa-facebook-f"></i> &middot; 50</button>
+          <br>
+          <br>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Plugin for the momentJs  -->
+  <script src="../assets/js/plugins/moment.min.js"></script>
+  <!--  Plugin for Sweet Alert -->
+  <script src="../assets/js/plugins/sweetalert2.js"></script>
+  <!-- Forms Validations Plugin -->
+  <script src="../assets/js/plugins/jquery.validate.min.js"></script>
+  <!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+  <script src="../assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script src="../assets/js/plugins/bootstrap-selectpicker.js"></script>
+  <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+  <script src="../assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+  <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
+  <script src="../assets/js/plugins/jquery.dataTables.min.js"></script>
+  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+  <script src="../assets/js/plugins/bootstrap-tagsinput.js"></script>
+  <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="../assets/js/plugins/jasny-bootstrap.min.js"></script>
+  <!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+  <script src="../assets/js/plugins/fullcalendar.min.js"></script>
+  <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+  <script src="../assets/js/plugins/jquery-jvectormap.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="../assets/js/plugins/nouislider.min.js"></script>
+  <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+  <!-- Library for adding dinamically elements -->
+  <script src="../assets/js/plugins/arrive.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chartist JS -->
+  <script src="../assets/js/plugins/chartist.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
+  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+  <script>
+     $(document).ready(function () {
+      $('#dtBasicExample').DataTable();
+    });
+    $('#dtBasicExample').mdbEditor({
+      mdbEditor: true
+    });
+    $('.dataTables_length').addClass('bs-select');
+    $(document).ready(function() {
+    var t = $('#example').DataTable();
+    var counter = 1;
+ 
+    $('#addRow').on( 'click', function () {
+        t.row.add( [
+            counter +'.1',
+            counter +'.2',
+            counter +'.3',
+            counter +'.4',
+            counter +'.5'
+        ] ).draw( false );
+ 
+        counter++;
+    } );
+ 
+    // Automatically add a first row of data
+    $('#addRow').click();
+} );
+  </script>
+
+
+
+
+
+
+</body>
+
+
+</html>
