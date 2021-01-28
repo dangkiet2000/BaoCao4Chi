@@ -51,7 +51,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <form style="margin-top: 0px;" id="formdangnhap" action="Login" onsubmit="return formdangnhap1()" method="post">
     <div class="dangnhap">
-
         <h2>Đăng nhập</h2>
        <p style="color: red" class="text-ranger">${mess}</p>
         <div class="tinh">

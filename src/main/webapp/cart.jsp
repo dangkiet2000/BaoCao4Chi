@@ -51,228 +51,20 @@
 </head>
 <body>
 <!--top-header-->
-<div class="top-header">
-    <div class="container">
-        <div class="top-header-main">
-            <div class="col-md-6 top-header-left">
-                <div class="drop">
-                    <div class="box">
-                        <select tabindex="4" class="dropdown drop">
-                            <option value="" class="label">Dollar :</option>
-                            <option value="1">Dollar</option>
-                            <option value="2">Euro</option>
-                        </select>
-                    </div>
-                    <div class="box1">
-                        <select tabindex="4" class="dropdown">
-                            <option value="" class="label">English :</option>
-                            <option value="1">English</option>
-                            <option value="2">French</option>
-                            <option value="3">German</option>
-                        </select>
-                    </div>
-
-                    <div class="box2">
-                        <a>ĐĂNG NHẬP</a>
-                        <ul id="kkk">
-                            <li class="menu-tiki1"><a id="dangnhapdechon">Đăng nhập</a></li>
-                            <li class="menu-tiki2"><a id="close1" style="color: black;">Tạo tài khoản</a></li>
-                            <li class="menu-tiki3"><a>Đăng nhập bằng Facebook</a></li>
-                            <li class="menu-tiki4"><a>Đăng nhập bằng Google</a></li>
-                            <li class="menu-tiki5"><a>Đăng nhập băng Zalo</a></li>
-
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-            </div>
-            <div class="col-md-6 top-header-left">
-                <div class="cart box_1">
-                    <a href="checkout.html">
-                        <div class="total">
-                            <span class="simpleCart_total"></span></div>
-                        <img src="images/cart-1.png" alt="" />
-                    </a>
-                    <p><a href="javascript:;" class="simpleCart_empty">Giỏ hàng</a></p>
-                    <div class="clearfix"> </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</div>
+<jsp:include page="header-top.jsp"></jsp:include>
 <!--top-header-->
 <!--start-logo-->
-<div class="logo">
-    <a href="index.html">
-        <h1>Luxury Watches</h1>
-    </a>
-</div>
+<jsp:include page="logo.jsp"></jsp:include>
 <!--start-logo-->
 <!--bottom-header-->
-<div class="header-bottom">
-    <div class="container">
-        <div class="header">
-            <div class="col-md-9 header-left">
-                <div class="top-nav">
-                    <ul class="memenu skyblue">
-                        <li class="active"><a href="index.html">Trang Chủ</a></li>
-                        <li class="grid"><a href="#">Nam</a>
-                            <div class="mepanel">
-                                <div class="row">
-                                    <div class="col1 me-one">
-                                        <h4>Hãng</h4>
-                                        <ul>
-                                            <li><a href="nam-casio.html">Đồng Hồ Casio</a></li>
-                                            <li><a href="nam-omega.html">Đồng Hồ Omega</a></li>
-                                            <li><a href="nam-seiko.html">Đồng Hồ Seiko</a></li>
-                                            <li><a href="nam-citizen.html">Đồng hồ Citizen</a></li>
-                                            <li><a href="nam-dw.html">Đồng Hồ Daniel Wellington</a></li>
-                                            <!--												<li><a href="men-shop-t-shirts.html">T-Shirts</a></li>-->
-                                            <!--												<li><a href="men-shop-watches.html">Watches</a></li>-->
-                                            <!--												<li><a href="men-shop-my-shopping-bag.html">My Shopping Bag</a></li>-->
-                                        </ul>
-                                    </div>
-                                    <!--										<div class="col1 me-one">-->
-                                    <!--											<h4>Style Zone</h4>-->
-                                    <!--											<ul>-->
-                                    <!--												<li><a href="men-style-zone-shoes.html">Shoes</a></li>-->
-                                    <!--												<li><a href="men-style-zone-watches.html">Watches</a></li>-->
-                                    <!--												<li><a href="men-style-zone-brands.html">Brands</a></li>-->
-                                    <!--												<li><a href="men-style-zone-coats.html">Coats</a></li>-->
-                                    <!--												<li><a href="men-style-zone-accessories.html">Accessories</a></li>-->
-                                    <!--												<li><a href="men-style-zone-trousers.html">Trousers</a></li>-->
-                                    <!--											</ul>-->
-                                    <!--										</div>-->
-                                    <!--										<div class="col1 me-one">-->
-                                    <!--											<h4>Popular Brands</h4>-->
-                                    <!--											<ul>-->
-                                    <!--												<li><a href="men-popular-brands-449-store.html">499 Store</a></li>-->
-                                    <!--												<li><a href="men-popular-brands-fastrack.html">Fastrack</a></li>-->
-                                    <!--												<li><a href="men-popular-brands-casio.html">Casio</a></li>-->
-                                    <!--												<li><a href="men-popular-brands-fossil.html">Fossil</a></li>-->
-                                    <!--												<li><a href="men-popular-brands-maxima.html">Maxima</a></li>-->
-                                    <!--												<li><a href="men-popular-brands-timex.html">Timex</a></li>-->
-                                    <!--												<li><a href="men-popular-brands-tomtom.html">TomTom</a></li>-->
-                                    <!--												<li><a href="men-popular-brands-titan.html">Titan</a></li>-->
-                                    <!--											</ul>-->
-                                    <!--										</div>-->
-                                </div>
-                            </div>
-                        </li>
-                        <li class="grid"><a href="donghonu.html">Nữ</a>
-                            <div class="mepanel">
-                                <div class="row">
-                                    <div class="col1 me-one">
-                                        <h4>Hãng</h4>
-                                        <ul>
-                                            <li><a href="nu-casio.html">Đồng Hồ Casio</a></li>
-                                            <li><a href="nu-citizen.html">Đồng Hồ Citizen</a></li>
-                                            <li><a href="nu-doxa.html">Đồng Hồ Doxa</a></li>
-                                            <li><a href="nu-fouette.html">Đồng Hồ Fouette</a></li>
-                                            <li><a href="nu-saga.html">Đồng Hồ Saga</a></li>
-                                            <!--												<li><a href="women-shop-t-shirts.html">T-Shirts</a></li>-->
-                                            <!--												<li><a href="women-shop-watches.html">Watches</a></li>-->
-                                            <!--												<li><a href="women-shop-my-shopping-bag.html">My Shopping Bag</a></li>-->
-                                        </ul>
-                                    </div>
-                                    <!--										<div class="col1 me-one">-->
-                                    <!--											<h4>Style Zone</h4>-->
-                                    <!--											<ul>-->
-                                    <!--												<li><a href="women-style-zone-shoes.html">Shoes</a></li>-->
-                                    <!--												<li><a href="women-style-zone-watches.html">Watches</a></li>-->
-                                    <!--												<li><a href="women-style-zone-brands.html">Brands</a></li>-->
-                                    <!--												<li><a href="women-style-zone-coats.html">Coats</a></li>-->
-                                    <!--												<li><a href="women-style-zone-accessories.html">Accessories</a></li>-->
-                                    <!--												<li><a href="women-style-zone-trousers.html">Trousers</a></li>-->
-                                    <!--											</ul>-->
-                                    <!--										</div>-->
-                                    <!--										<div class="col1 me-one">-->
-                                    <!--											<h4>Popular Brands</h4>-->
-                                    <!--											<ul>-->
-                                    <!--												<li><a href="women-popular-brands-449-store.html">499 Store</a></li>-->
-                                    <!--												<li><a href="women-popular-brands-fastrack.html">Fastrack</a></li>-->
-                                    <!--												<li><a href="women-popular-brands-casio.html">Casio</a></li>-->
-                                    <!--												<li><a href="women-popular-brands-fossil.html">Fossil</a></li>-->
-                                    <!--												<li><a href="women-popular-brands-maxima.html">Maxima</a></li>-->
-                                    <!--												<li><a href="women-popular-brands-timex.html">Timex</a></li>-->
-                                    <!--												<li><a href="women-popular-brands-tomtom.html">TomTom</a></li>-->
-                                    <!--												<li><a href="women-popular-brands-titan.html">Titan</a></li>-->
-                                    <!--											</ul>-->
-                                    <!--										</div>-->
-                                </div>
-                            </div>
-                        </li>
-                        <li class="grid"><a href="donghocap.html">Cặp Đôi</a>
-                            <div class="mepanel">
-                                <div class="row">
-                                    <div class="col1 me-one">
-                                        <h4>Hãng</h4>
-                                        <ul>
-                                            <li><a href="capdoi-casio.html">Đồng Hồ Casio</a></li>
-                                            <li><a href="capdoi-Omega.html">Đồng Hồ Omega</a></li>
-                                            <li><a href="capdoi-seiko.html">Đồng Hồ Seiko</a></li>
-                                            <li><a href="capdoi-citizen.html">Đồng Hồ Citizen</a></li>
-                                            <li><a href="capdoi-DW.html">Đồng Hồ Daniel Wellington</a></li>
-                                            <!--												<li><a href="kids-shop-t-shirts.html">T-Shirts</a></li>-->
-                                            <!--												<li><a href="kids-shop-watches.html">Watches</a></li>-->
-                                            <!--												<li><a href="kids-shop-my-shopping-bag.html">My Shopping Bag</a></li>-->
-                                        </ul>
-                                    </div>
-                                    <!--										<div class="col1 me-one">-->
-                                    <!--											<h4>Style Zone</h4>-->
-                                    <!--											<ul>-->
-                                    <!--												<li><a href="kids-style-zone-shoes.html">Shoes</a></li>-->
-                                    <!--												<li><a href="kids-style-zone-watches.html">Watches</a></li>-->
-                                    <!--												<li><a href="kids-style-zone-brands.html">Brands</a></li>-->
-                                    <!--												<li><a href="kids-style-zone-coats.html">Coats</a></li>-->
-                                    <!--												<li><a href="kids-style-zone-accessories.html">Accessories</a></li>-->
-                                    <!--												<li><a href="kids-style-zone-trousers.html">Trousers</a></li>-->
-                                    <!--											</ul>-->
-                                    <!--										</div>-->
-                                    <!--										<div class="col1 me-one">-->
-                                    <!--											<h4>Popular Brands</h4>-->
-                                    <!--											<ul>-->
-                                    <!--												<li><a href="kids-popular-brands-449-store.html">499 Store</a></li>-->
-                                    <!--												<li><a href="kids-popular-brands-fastrack.html">Fastrack</a></li>-->
-                                    <!--												<li><a href="kids-popular-brands-casio.html">Casio</a></li>-->
-                                    <!--												<li><a href="kids-popular-brands-fossil.html">Fossil</a></li>-->
-                                    <!--												<li><a href="kids-popular-brands-maxima.html">Maxima</a></li>-->
-                                    <!--												<li><a href="kids-popular-brands-timex.html">Timex</a></li>-->
-                                    <!--												<li><a href="kids-popular-brands-tomtom.html">TomTom</a></li>-->
-                                    <!--												<li><a href="kids-popular-brands-titan.html">Titan</a></li>-->
-                                    <!--											</ul>-->
-                                    <!--										</div>-->
-                                </div>
-                            </div>
-                        </li>
-                        <li class="grid"><a href="typo.html">Blog</a>
-                        </li>
-                        <li class="grid"><a href="contact.html">Liên Hệ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-            <div class="col-md-3 header-right">
-                <div class="search-bar">
-                    <input type="text" value="Tìm Kiếm" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Search';}">
-                    <input type="submit" value="">
-                </div>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-</div>
+<jsp:include page="header-bottom.jsp"></jsp:include>
 <!--bottom-header-->
 <!--start-breadcrumbs-->
 <div class="breadcrumbs">
     <div class="container">
         <div class="breadcrumbs-main">
             <ol class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Home</a></li>
                 <li class="active">Checkout</li>
             </ol>
         </div>
@@ -333,16 +125,16 @@
                                                                        class="img-responsive" alt=""></a>
                         </li>
                         <li><span class="name">${d.name}</span></li>
-<%--                        <li><span class="name">${d.quantity}</span></li>--%>
-                        <li><span class="name">
-									<div class="buttons_added">
-										<input class="minus is-form" type="button" value="-">
-										<input aria-label="quantity" class="input-qty" max="10" min="1" name=""
-                                               type="number" value="${d.quantity}"> <input class="plus is-form" type="button"
-                                                                               value="+">
-									</div>
-								</span>
-                        </li>
+                        <li><span class="name">${d.quantity}</span></li>
+<%--                        <li><span class="name">--%>
+<%--									<div class="buttons_added">--%>
+<%--										<input class="minus is-form" type="button" value="-">--%>
+<%--										<input aria-label="quantity" class="input-qty" max="10" min="1" name=""--%>
+<%--                                               type="number" value="${d.quantity}"> <input class="plus is-form" type="button"--%>
+<%--                                                                               value="+">--%>
+<%--									</div>--%>
+<%--								</span>--%>
+<%--                        </li>--%>
                         <li><span class="cost">${d.price*d.quantity}</span></li>
                         <li><span>Free</span>
                             <p>Delivered in 2-3 business days</p>

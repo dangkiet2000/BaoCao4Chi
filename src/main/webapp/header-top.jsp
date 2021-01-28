@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="box2">
-                        <a>ĐĂNG NHẬP</a>
+                        <a><i style="color: white" class="fas fa-user" aria-hidden="true"></i></a>
                         <ul id="kkk">
                             <li class="menu-tiki1"><a id="dangnhapdechon">Đăng nhập</a></li>
                             <li class="menu-tiki2"><a id="close1" style="color: black;">Tạo tài khoản</a></li>

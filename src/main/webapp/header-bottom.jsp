@@ -18,17 +18,17 @@
                 <div class="top-nav">
                     <ul class="memenu skyblue">
                         <li ><a href="index.html">Trang chủ</a></li>
-                        <li class="grid"><a href="nam-casio.html">Nam</a>
+                        <li class="grid"><a href="SearchCategory?index=1&idCategory=1&idSupplier=2&idSupplier=3&idSupplier=4&idSupplier=5">Nam</a>
                             <div class="mepanel">
                                 <div class="row">
                                     <div class="col1 me-one">
                                         <h4>Hãng</h4>
                                         <ul>
-                                            <li><a href="nam-casio.html">Đồng hồ Casio</a></li>
-                                            <li><a href="nam-omega.html">Đồng hồ Omega</a></li>
-                                            <li><a href="nam-seiko.html">Đồng hồ Seiko</a></li>
-                                            <li><a href="nam-citizen.html">Đồng hồ Citizen</a></li>
-                                            <li><a href="nam-dw.html">Đồng hồ Daniel Wellington</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=1&idSupplier=1">Đồng hồ Casio</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=1&idSupplier=2">Đồng hồ Citizen</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=1&idSupplier=3">Đồng hồ Seiko</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=1&idSupplier=4">Đồng hồ Doxa</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=1&idSupplier=5">OP</a></li>
                                             <!--												<li><a href="men-shop-t-shirts.html">T-Shirts</a></li>-->
                                             <!--												<li><a href="men-shop-watches.html">Watches</a></li>-->
                                             <!--												<li><a href="men-shop-my-shopping-bag.html">My Shopping Bag</a></li>-->
@@ -63,17 +63,17 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="active"><a href="donghonu.html">Nữ</a>
+                        <li class="active"><a href="SearchCategory?index=1&idCategory=2&idSupplier=2&idSupplier=3&idSupplier=4&idSupplier=5">Nữ</a>
                             <div class="mepanel">
                                 <div class="row">
                                     <div class="col1 me-one">
                                         <h4>Hãng</h4>
                                         <ul style="float: left;">
-                                            <li><a href="nu-casio.html">Đồng hồ Casio</a></li>
-                                            <li><a href="nu-citizen.html">Đồng hồ Citizen</a></li>
-                                            <li><a href="nu-doxa.html">Đồng Hồ Doxa</a></li>
-                                            <li><a href="nu-fouette.html">Đồng hồ Fouette</a></li>
-                                            <li><a href="nu-saga.html">Đồng hồ Saga</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=2&idSupplier=1">Đồng hồ Casio</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=2&idSupplier=2">Đồng hồ Citizen</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=2&idSupplier=3">Đồng Hồ Doxa</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=2&idSupplier=4">Đồng hồ Fouette</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=2&idSupplier=5">Đồng hồ Saga</a></li>
 
 
                                             <!--												<li><a href="women-shop-t-shirts.html">T-Shirts</a></li>-->
@@ -111,17 +111,17 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="grid"><a href="donghocap.html">Cặp đôi</a>
+                        <li class="grid"><a href="SearchCategory?index=1&idCategory=3">Cặp đôi</a>
                             <div class="mepanel">
                                 <div class="row">
                                     <div class="col1 me-one">
                                         <h4>Hãng</h4>
                                         <ul>
-                                            <li><a href="capdoi-casio.html">Đồng hồ Casio</a></li>
-                                            <li><a href="capdoi-Omega.html">Đồng hồ Omega</a></li>
-                                            <li><a href="capdoi-seiko.html">Đồng hồ Seiko</a></li>
-                                            <li><a href="capdoi-citizen.html">Đồng hồ Citizen</a></li>
-                                            <li><a href="capdoi-DW.html">Đồng hồ Daniel Wellington</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=3&idSupplier=1">Đồng hồ Casio</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=3&idSupplier=5">Đồng hồ Omega</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=3&idSupplier=5">Đồng hồ Seiko</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=3&idSupplier=2">Đồng hồ Citizen</a></li>
+                                            <li><a href="SearchCategory?index=1&idCategory=3&idSupplier=6">Đồng hồ Daniel Tissot</a></li>
                                             <!--												<li><a href="kids-shop-t-shirts.html">T-Shirts</a></li>-->
                                             <!--												<li><a href="kids-shop-watches.html">Watches</a></li>-->
                                             <!--												<li><a href="kids-shop-my-shopping-bag.html">My Shopping Bag</a></li>-->

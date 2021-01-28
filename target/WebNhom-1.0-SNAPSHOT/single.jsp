@@ -305,7 +305,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--top-header-->
 <!--start-logo-->
 <div class="logo">
-    <a href="index.html">
+    <a href="index2.html">
         <h1>Luxury Watches</h1>
     </a>
 </div>
@@ -317,7 +317,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-9 header-left">
                 <div class="top-nav">
                     <ul class="memenu skyblue">
-                        <li class="active"><a href="index.html">Trang Chủ</a></li>
+                        <li class="active"><a href="index2.html">Trang Chủ</a></li>
                         <li class="grid"><a href="#">Nam</a>
                             <div class="mepanel">
                                 <div class="row">
@@ -482,7 +482,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <div class="breadcrumbs-main">
             <ol class="breadcrumb">
-                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="index2.html">Trang Chủ</a></li>
                 <li class="active">Chi Tiết Sản Phẩm</li>
             </ol>
         </div>

@@ -128,8 +128,9 @@
                                                 <th class="text-center">Tên danh mục</th>
                                                 <th class="text-center">Active</th>
                                                 <th class="text-center">Slug</th>
+
+
                                                 <th class="text-center">Remove</th>
-                                                <th class="text-center">Edit</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -139,8 +140,13 @@
                                                 <td class="pt-3-half" contenteditable="true">"${m.name}"</td>
                                                 <td class="pt-3-half" contenteditable="true">"${m.active}"</td>
                                                 <td class="pt-3-half" contenteditable="true">"${m.slup}"</td>
-                                                <td><a style="color:white;background-color: red;padding: 4px 12px;border-radius: 5px" href="DelDanhMuc?iddm=${m.id}">Delete</a></td>
-                                                <td><a style="color:white;background-color: lawngreen;padding: 4px 12px;border-radius: 5px" href="LoadDanhMuc?iddm=${m.id}">Edit</a></td>
+
+
+                                                <td>
+                              <span class="table-remove"><button type="button"
+                                                                 class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                                                </td>
+
                                             </tr>
                                             </c:forEach>
                                             </tbody>

@@ -8,7 +8,7 @@ import vn.edu.nlu.bean.DanhMuc;
 import vn.edu.nlu.bean.NhaCungCap;
 import vn.edu.nlu.bean.User;
 
-
+import  vn.edu.nlu.admin_controller.SearchCategory;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -270,6 +270,73 @@ public class  ProductEntity {
             return new LinkedList<>();
         }
      }
+    public List<Product>getProductWithCategory(String idCategory,String idSupplier,int begin, int size){
+        PreparedStatement s=null;
+        try{
+            List<Product>re=new LinkedList<>();
+            String sql="select * from product where category_id like ?  and suppler_id like ?  limit ?,?";
+          /* // if(valueFilter==0)
+             //   sql="select * from product where category_id like ? limit ?,?";
+            //else if(valueFilter==1){
+            //    sql="select * from product where category_id like ? and priceSale <10000000 and priceSale >1000000 limit ?,?";
+            //}
+            else if(valueFilter==2){
+                sql="select * from product where category_id like ? and priceSale <20000000 and priceSale >10000000 limit ?,?";
+            }
+            else if(valueFilter==1){
+                sql="select * from product where category_id like ? and priceSale <3000000 and priceSale >20000000 limit ?,?";
+            }
+            */
+
+            s=ConnectionDB.connect(sql);
+            s.setString(1,idCategory);
+            s.setString(2,idSupplier);
+            s.setInt(3,begin);
+            s.setInt(4,size);
+            ResultSet rs= s.executeQuery();
+            while(rs.next()){
+                re.add(new Product(
+                        rs.getString(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getLong(4),
+                        rs.getLong(5),
+                        rs.getString(6),
+                        rs.getString(7)
+                ));
+            }
+            rs.close();
+            s.close();
+            return re;
+        }catch (ClassNotFoundException | SQLException e){
+            e.printStackTrace();
+            return new LinkedList<>();
+        }
+
+
+    }
+    public int countCategory(String id) {
+        PreparedStatement s = null;
+        try {
+            String sql = "SELECT COUNT(*) FROM categories where category_id = ?";
+            s = ConnectionDB.connect(sql);
+
+            s.setString(1, id);
+
+            ResultSet rs = s.executeQuery();
+            while (rs.next()) {
+
+                return rs.getInt(1);
+            }
+
+        } catch (SQLException | ClassNotFoundException throwables) {
+            throwables.printStackTrace();
+        }
+        return 0;
+
+    }
+
+
 
     public static void main(String[] args) {
         ProductEntity pe= new ProductEntity();

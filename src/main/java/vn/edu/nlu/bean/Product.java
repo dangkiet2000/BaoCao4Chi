@@ -15,6 +15,8 @@ public class Product implements Serializable{
     private int quantity;
     private String sup;
     private  int active;
+    private String id_categories;
+    private String  id_supplier;
 
     public Product(String id, String name, String img1, long price, long priceSale, String img2, String img3, int quantity) {
         this.id = id;
@@ -29,7 +31,6 @@ public class Product implements Serializable{
     // hết
     public Product(String id, String img1, String name, String sup, long price, long priceSale, int quantity, int active) {
         this.id = id;
-
         this.img1 = img1;
         this.name = name;
         this.sup = sup;
@@ -46,7 +47,16 @@ public class Product implements Serializable{
         this.img1 = img;
         this.price = price;
         this.priceSale = priceSale;
+    }
 
+    public Product(String id, String name, String img1, long price, long priceSale,String id_categories,String id_supplier){
+        this.id = id;
+        this.name = name;
+        this.img1 = img1;
+        this.price = price;
+        this.priceSale = priceSale;
+        this.id_categories=id_categories;
+        this.id_supplier=id_supplier;
     }
 
     public String getId() {

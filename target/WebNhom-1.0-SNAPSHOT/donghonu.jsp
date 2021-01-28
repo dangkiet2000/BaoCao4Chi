@@ -57,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
             <div class="breadcrumbs-main">
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="index2.html">Trang chủ</a></li>
                     <li class="active">Đồng hồ nữ  </li>
                 </ol>
             </div>
