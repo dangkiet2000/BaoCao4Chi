@@ -333,16 +333,16 @@
                                                                        class="img-responsive" alt=""></a>
                         </li>
                         <li><span class="name">${d.name}</span></li>
-                        <li><span class="name">${d.quantity}</span></li>
-<%--                        <li><span class="name">--%>
-<%--									<div class="buttons_added">--%>
-<%--										<input class="minus is-form" type="button" value="-">--%>
-<%--										<input aria-label="quantity" class="input-qty" max="10" min="1" name=""--%>
-<%--                                               type="number" value="${d.quantity}"> <input class="plus is-form" type="button"--%>
-<%--                                                                               value="+">--%>
-<%--									</div>--%>
-<%--								</span>--%>
-<%--                        </li>--%>
+<%--                        <li><span class="name">${d.quantity}</span></li>--%>
+                        <li><span class="name">
+									<div class="buttons_added">
+										<input class="minus is-form" type="button" value="-">
+										<input aria-label="quantity" class="input-qty" max="10" min="1" name=""
+                                               type="number" value="${d.quantity}"> <input class="plus is-form" type="button"
+                                                                               value="+">
+									</div>
+								</span>
+                        </li>
                         <li><span class="cost">${d.price*d.quantity}</span></li>
                         <li><span>Free</span>
                             <p>Delivered in 2-3 business days</p>

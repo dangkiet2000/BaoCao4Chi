@@ -112,52 +112,45 @@
                                 <p class="card-category"></p>
                             </div>
                             <div class="card-body">
-                                <form>
-
+                                <form action="http://localhost:8080/WebNhom_war/AddDanhMuc">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <p>STT</p>
-
+                                                <p>Name</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="bmd-label-floating">Nhập số thứ tự</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <p>Hình ảnh</p>
-
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <button>Chọn hình ảnh</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <p>Thể loại</p>
-
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Nhập thể loại</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" name="name" class="form-control">
                                             </div>
                                         </div>
                                     </div>
 
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <p>Active</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="active" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <p>Slug</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input name="slug" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <button style="margin-right:350px;" type="submit" class="btn btn-primary pull-right">Thêm</button>
                                     <div class="clearfix"></div>

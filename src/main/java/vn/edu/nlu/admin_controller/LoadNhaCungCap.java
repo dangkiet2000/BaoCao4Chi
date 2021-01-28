@@ -20,7 +20,6 @@ public class LoadNhaCungCap extends HttpServlet {
         String idncc = request.getParameter("idncc");
         NhaCungCapEntity ncc =  new NhaCungCapEntity();
         NhaCungCap n=ncc.getNCCbyId(idncc);
-
         request.setAttribute("ncc",n);
         request.getRequestDispatcher("View/suahangsanxuat.jsp").forward(request,response);
     }
