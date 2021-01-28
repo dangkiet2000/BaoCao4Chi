@@ -35,98 +35,15 @@
 <body>
 <div class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-        <!--
-          Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-          Tip 2: you can also add an image using data-image tag
-      -->
-        <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-            ADMIN
-        </a></div>
-        <div class="sidebar-wrapper">
-            <ul class="nav">
-                <li class="nav-item  ">
-                    <a class="nav-link" href="./quanlydonhang.html">
-                        <i class="material-icons">dashboard</i>
-                        <p>Quản lý đơn hàng</p>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="./danhsachtaikhoan.html">
-                        <i class="material-icons">person</i>
-                        <p>Quản lý tài khoản</p>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a class="nav-link" href="./danhsachadmin.html">
-                        <i class="material-icons">person</i>
-                        <p>Quản lý admin</p>
-                    </a>
-                </li>
-                <li >
-                    <a class="nav-link" href="./danhsachsanpham.html">
-                        <i class="material-icons">content_paste</i>
-                        <p>Quản lý sản phẩm</p>
-                    </a>
-                </li>
-                <li class="nav-item   ">
-                    <a class="nav-link" href="./danhsachblog.html">
-                        <i class="material-icons">content_paste</i>
-                        <p>Quản lý blog</p>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="./danhsachtheloai.html">
-                        <i class="material-icons">library_books</i>
-                        <p>Quản lý danh mục</p>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="./quanlythanhtoan.html">
-                        <i class="material-icons">bubble_chart</i>
-                        <p>Quản lý thanh toán</p>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="./quanlybinhluan.html">
-                        <i class="fas fa-comments"></i>
-                        <p>Quản lý bình luận</p>
-                    </a>
-                </li>
-                <li class="nav-item active ">
-                    <a class="nav-link" href="./danhsachhangsanxuat.html">
-                        <i class="fab fa-product-hunt"></i>
-                        <p>Quản lý nhà cung cấp</p>
-                    </a>
-                </li>
-                <li >
-                    <a class="nav-link" href="./quanlydanhgia.html">
-                        <i class="fab fa-product-hunt"></i>
-                        <p>Quản lý đánh giá</p>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a class="nav-link" href="./dashboard.html">
-                        <i class="material-icons">dashboard</i>
-                        <p>Xem thống kê</p>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a class="nav-link" href="./user.html">
-                        <i class="material-icons">dashboard</i>
-                        <p>Thông tin cá nhân</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <jsp:include page="menuAdmin.jsp"></jsp:include>
     </div>
     <div class="main-panel">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
             <div class="container-fluid">
                 <div class="navbar-wrapper">
-                    <a  class="navbar-brand" href="danhsachhangsanxuat.html ">Danh sách nhà cung cấp</a>
-                    <a href="themhangsanxuat.html" style="color: #ff6600;">Thêm nhà cung cấp</a>
+                    <a  class="navbar-brand" href="NhaCungCapController">Danh sách nhà cung cấp</a>
+                    <a href="AddNhaCungCap" style="color: #ff6600;">Thêm nhà cung cấp</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="sr-only">Toggle navigation</span>
@@ -198,7 +115,8 @@
                                 <p class="card-category"></p>
                             </div>
                             <div class="card-body">
-                               <form action="addNhaCungCap" method="post">
+                               <form action="http://localhost:8080/WebNhom_war/AddNhaCungCap"  method="post">
+                                   <p style="color:red;">${mess}</p>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
@@ -253,7 +171,7 @@
                                     </div>
 
                                     <button style="margin-right:350px;" type="submit" class="btn btn-primary pull-right">Thêm</button>
-                                    <input type="submit" value="Add"/>
+
                                     <div class="clearfix"></div>
                                 </form>
 

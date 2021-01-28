@@ -1,4 +1,4 @@
-package vn.edu.nlu.controller;
+package vn.edu.nlu.admin_controller;
 
 import vn.edu.nlu.bean.BinhLuan;
 import vn.edu.nlu.entity.BinhLuanEntity;

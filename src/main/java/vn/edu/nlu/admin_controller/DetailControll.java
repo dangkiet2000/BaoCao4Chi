@@ -1,4 +1,4 @@
-package vn.edu.nlu.controller;
+package vn.edu.nlu.admin_controller;
 
 import vn.edu.nlu.bean.Product;
 import vn.edu.nlu.dao.DAO;

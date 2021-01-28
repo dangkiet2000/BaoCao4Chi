@@ -36,26 +36,26 @@
 </a></div>
 <div class="sidebar-wrapper">
     <ul class="nav">
-        <li class="nav-item  ">
+        <li class="nav-item">
             <a class="nav-link" href="./quanlydonhang.jsp">
                 <i class="material-icons">dashboard</i>
                 <p>Quản lý đơn hàng</p>
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="./danhsachtaikhoan.jsp">
+            <a class="nav-link" href="danhsachtaikhoan">
                 <i class="material-icons">person</i>
                 <p>Quản lý tài khoản</p>
             </a>
         </li>
         <li class="nav-item  ">
-            <a class="nav-link" href="./danhsachadmin.html">
+            <a class="nav-link" href="./danhsachadmin.jsp">
                 <i class="material-icons">person</i>
                 <p>Quản lý admin</p>
             </a>
         </li>
         <li class="nav-item  ">
-            <a class="nav-link" href="./danhsachsanpham.html">
+            <a class="nav-link" href="./dachsachsanpham.jsp">
                 <i class="material-icons">content_paste</i>
                 <p>Quản lý sản phẩm</p>
             </a>
@@ -67,7 +67,7 @@
             </a>
         </li>
         <li class="nav-item  ">
-            <a class="nav-link" href="../../danhsachtheloai.jsp">
+            <a class="nav-link" href="DanhMucController">
                 <i class="material-icons">library_books</i>
                 <p>Quản lý danh mục</p>
             </a>
@@ -79,24 +79,24 @@
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="./quanlybinhluan.jsp">
+            <a class="nav-link" href="BinhLuanController">
                 <i class="fas fa-comments"></i>
                 <p>Quản lý bình luận</p>
             </a>
         </li>
         <li class="nav-item  ">
-            <a class="nav-link" href="../../danhsachhangsanxuat.jsp">
+            <a class="nav-link" href="NhaCungCapController">
                 <i class="fab fa-product-hunt"></i>
                 <p>Quản lý nhà cung cấp</p>
             </a>
         </li>
-        <li class="nav-item active ">
+        <li class="nav-item">
             <a class="nav-link" href="./quanlydanhgia.jsp">
                 <i class="fab fa-product-hunt"></i>
                 <p>Quản lý đánh giá</p>
             </a>
         </li>
-        <li class="nav-item  ">
+        <li class="nav-item">
             <a class="nav-link" href="./dashboard.jsp">
                 <i class="material-icons">dashboard</i>
                 <p>Xem thống kê</p>
@@ -110,5 +110,10 @@
         </li>
     </ul>
 </div>
+<script type="text/javascript">
+    $(document).on('click', 'ul li', function(){
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+</script>
 </body>
 </html>

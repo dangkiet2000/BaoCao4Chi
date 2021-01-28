@@ -1,4 +1,4 @@
-package vn.edu.nlu.controller;
+package vn.edu.nlu.admin_controller;
 
 import vn.edu.nlu.entity.NhaCungCapEntity;
 import vn.edu.nlu.entity.ProductEntity;
@@ -17,7 +17,7 @@ public class NhaCungCapController extends HttpServlet {
         NhaCungCapEntity pe = new NhaCungCapEntity();
 
         List<NhaCungCap> listNCC = pe.getAllNCC();
-        System.out.println(listNCC);
+
         request.setAttribute("listNCC", listNCC);
         request.getRequestDispatcher("View/danhsachhangsanxuat.jsp").forward(request,response);
     }

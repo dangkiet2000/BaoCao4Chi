@@ -29,98 +29,20 @@
 <body>
 <div class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-        <!--
-          Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-          Tip 2: you can also add an image using data-image tag
-      -->
-        <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-            ADMIN
-        </a></div>
-        <div class="sidebar-wrapper">
-            <ul class="nav">
-                <li class="nav-item  ">
-                    <a class="nav-link" href="admin/examples/quanlydonhang.jsp">
-                        <i class="material-icons">dashboard</i>
-                        <p>Quản lý đơn hàng</p>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="admin/examples/danhsachtaikhoan.jsp">
-                        <i class="material-icons">person</i>
-                        <p>Quản lý tài khoản</p>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a class="nav-link" href="./danhsachadmin.html">
-                        <i class="material-icons">person</i>
-                        <p>Quản lý admin</p>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a class="nav-link" href="admin/examples/danhsachsanpham.html">
-                        <i class="material-icons">content_paste</i>
-                        <p>Quản lý sản phẩm</p>
-                    </a>
-                </li>
-                <li class="nav-item   ">
-                    <a class="nav-link" href="admin/examples/danhsachblog.jsp">
-                        <i class="material-icons">content_paste</i>
-                        <p>Quản lý blog</p>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a class="nav-link" href="danhsachtheloai.jsp">
-                        <i class="material-icons">library_books</i>
-                        <p>Quản lý danh mục</p>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="admin/examples/quanlythanhtoan.jsp">
-                        <i class="material-icons">bubble_chart</i>
-                        <p>Quản lý thanh toán</p>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="admin/examples/quanlybinhluan.jsp">
-                        <i class="fas fa-comments"></i>
-                        <p>Quản lý bình luận</p>
-                    </a>
-                </li>
-                <li class="nav-item active ">
-                    <a class="nav-link" href="./danhsachhangsanxuat.jsp">
-                        <i class="fab fa-product-hunt"></i>
-                        <p>Quản lý nhà cung cấp</p>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a class="nav-link" href="admin/examples/quanlydanhgia.jsp">
-                        <i class="fab fa-product-hunt"></i>
-                        <p>Quản lý đánh giá</p>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a class="nav-link" href="admin/examples/dashboard.jsp">
-                        <i class="material-icons">dashboard</i>
-                        <p>Xem thống kê</p>
-                    </a>
-                </li>
-                <li class="nav-item  ">
-                    <a class="nav-link" href="admin/examples/user.jsp">
-                        <i class="material-icons">dashboard</i>
-                        <p>Thông tin cá nhân</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <jsp:include page="menuAdmin.jsp"></jsp:include>
     </div>
     <div class="main-panel">
         <!-- Navbar -->
+
+
+
+
+
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
             <div class="container-fluid">
                 <div class="navbar-wrapper">
                     <a class="navbar-brand" style="color:#ff6600 ;" href="admin/examples/danhsachhangsanxuat.html">Danh sách hãng sản xuất</a>
-                    <a style="color:black  ;" href="">Thêm hãng sản xuất</a>
+                    <a style="color:black  ;" href="./View/themhangsanxuat.jsp">Thêm hãng sản xuất</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="sr-only">Toggle navigation</span>
@@ -205,19 +127,21 @@
                                                 <th class="text-center">Điện thoại</th>
                                                 <th class="text-center">Email</th>
                                                 <th class="text-center">Remove</th>
+                                                <th class="text-center">Edit</th>
                                             </tr>
                                             </thead>
                                             <tbody>
 
                                             <c:forEach items="${listNCC}" var="l">
                                             <tr>
-                                                <td class="pt-3-half" contenteditable="true">"${l.id}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${l.tenNCC}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${l.diachi}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${l.dienthoai}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${l.email}"</td>
+                                                <td class="pt-3-half" contenteditable="true">${l.id}</td>
+                                                <td class="pt-3-half" contenteditable="true">${l.tenNCC}</td>
+                                                <td class="pt-3-half" contenteditable="true">${l.diachi}</td>
+                                                <td class="pt-3-half" contenteditable="true">${l.dienthoai}</td>
+                                                <td class="pt-3-half" contenteditable="true">${l.email}</td>
 
                                                <td><a style="color:white;background-color: red;padding: 4px 12px;border-radius: 5px" href="DelNhaCungCap?idncc=${l.id}">Delete</a></td>
+                                                <td><a style="color:white;background-color: lawngreen;padding: 4px 12px;border-radius: 5px" href="LoadNhaCungCap?idncc=${l.id}">Edit</a></td>
                                             </tr>
                                             </c:forEach>
                                             <!-- This is our clonable table line -->

@@ -1,4 +1,4 @@
-package vn.edu.nlu.controller;
+package vn.edu.nlu.admin_controller;
 
 import vn.edu.nlu.entity.ProductEntity;
 import vn.edu.nlu.bean.User;
@@ -22,6 +22,6 @@ public class TaiKhoanController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    doGet(request,response);
+            doGet(request,response);
     }
 }

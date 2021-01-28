@@ -232,7 +232,6 @@ public class  ProductEntity {
                         rs.getString(3),
                         rs.getLong(6),
                         rs.getLong(15)
-
                 );
 
                 rs.close();
