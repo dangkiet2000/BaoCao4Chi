@@ -17,7 +17,7 @@
             <div class="col-md-9 header-left">
                 <div class="top-nav">
                     <ul class="memenu skyblue">
-                        <li ><a href="index.html">Trang chủ</a></li>
+                        <li ><a href="Home">Trang chủ</a></li>
                         <li class="grid"><a href="SearchCategory?index=1&idCategory=1&idSupplier=2&idSupplier=3&idSupplier=4&idSupplier=5">Nam</a>
                             <div class="mepanel">
                                 <div class="row">
@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="active"><a href="SearchCategory?index=1&idCategory=2&idSupplier=2&idSupplier=3&idSupplier=4&idSupplier=5">Nữ</a>
+                        <li class="active"><a href="donghonu">Nữ</a>
                             <div class="mepanel">
                                 <div class="row">
                                     <div class="col1 me-one">

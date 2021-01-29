@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<div class="dangki">
+<div class="dangki" style="margin-top: -100px">
     <form id="formdangki" onsubmit="return formdangki1()" action="XuLyDangKy" method="post">
 
         <i id="close" class="fas fa-times-circle" style="   margin-top: -41px;
@@ -22,7 +22,7 @@
                 <p>Họ tên</p>
             </div>
             <div class="phai">
-                <input type="text" id="email7" name="uname" placeholder="Nhập họ tên"
+                <input type="text" id="email7" name="name" placeholder="Nhập họ tên"
                        class="Input-sc-17i9bto-0 bYlDgr" value="">
                 <p class="baoloi" id="message7"></p>
             </div>
@@ -32,21 +32,12 @@
                 <p>SĐT</p>
             </div>
             <div class="phai">
-                <input type="text" id="email8" name="sdt" placeholder="Nhập số điện thoại"
+                <input type="text" id="email8" name="phone" placeholder="Nhập số điện thoại"
                        class="Input-sc-17i9bto-0 bYlDgr" value="">
                 <p class="baoloi" id="message8"></p>
             </div>
         </div>
-        <div class="tinh">
-            <div class="trai">
-                <p>Mã xác thực</p>
-            </div>
-            <div class="phai">
-                <input type="text" id="email9" name="maxacthuc" placeholder="Nhập mã xác thực "
-                       class="Input-sc-17i9bto-0 bYlDgr" value="">
-                <p class="baoloi" id="message9"></p>
-            </div>
-        </div>
+
         <div class="tinh">
             <div class="trai">
                 <p>Email</p>
@@ -60,20 +51,26 @@
         </div>
         <div class="tinh">
             <div class="trai">
-                <p>Mật khẩu</p>
+                <p>PassWord</p>
             </div>
             <div class="phai">
-                <input type="password" id="email11" name="password" placeholder="Mật khẩu từ 6 đến 32 ký tự"
+                <input type="text" id="email9" name="password" placeholder="Mật khẩu từ 6 đến 32 ký tự"
+                       class="Input-sc-17i9bto-0 bYlDgr" value="">
+                <p class="baoloi" id="message9"></p>
+            </div>
+        </div>
+        <div class="tinh">
+            <div class="trai">
+                <p>Re-Password</p>
+            </div>
+            <div class="phai">
+                <input type="password" id="email11" name="repassword" placeholder="Nhập Lại Mật Khẩu"
                        class="Input-sc-17i9bto-0 bYlDgr" value="">
                 <p class="baoloi" id="message11"></p>
             </div>
         </div>
         <div class="quenmatkhau">
-
         </div>
-
-
-
         <input type="submit" class="buttondangki" value="Đăng kí">
     </form>
 

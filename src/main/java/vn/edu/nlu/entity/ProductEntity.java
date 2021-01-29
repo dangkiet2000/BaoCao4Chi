@@ -26,7 +26,7 @@ public class  ProductEntity {
         try {
             s = ConnectionDB.connect();
             List<Product> re = new LinkedList<>();
-            ResultSet rs = s.executeQuery("select * from product where product.category_id=2");
+            ResultSet rs = s.executeQuery("select * from product where category_id=2");
 
             while (rs.next()) {
                 re.add(new Product(
@@ -47,7 +47,6 @@ public class  ProductEntity {
         }
     }
     public List<NhaCungCap> getAllNCC() {
-
         Statement s = null;
         try {
             s = ConnectionDB.connect();
@@ -104,7 +103,6 @@ public class  ProductEntity {
 
     }
     public List<BinhLuan> getAllBinhLuan() {
-
         Statement s = null;
         try {
             s = ConnectionDB.connect();
@@ -335,13 +333,25 @@ public class  ProductEntity {
         return 0;
 
     }
+    public  boolean delProduct(int id){
+        PreparedStatement state = null;
+        String sql = "delete from product where id = ?";
+        try {
+            state = ConnectionDB.connect(sql);
+            state.setInt(1,id);
+            state.executeUpdate();
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }
+    }
 
 
 
     public static void main(String[] args) {
         ProductEntity pe= new ProductEntity();
-        pe.count("casio");
-        System.out.println(pe.getAllBinhLuan());
+        System.out.println(pe.delProduct(19));
 
     }
 

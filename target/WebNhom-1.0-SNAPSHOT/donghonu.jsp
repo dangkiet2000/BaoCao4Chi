@@ -67,8 +67,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!--prdt-starts-->
     <form style="margin-top: 0px;" id="formdangnhap" onsubmit="return formdangnhap1()">
 		<div class="dangnhap" style="margin-top: -152px;">
-
-
 			<i id="close" class="fas fa-times-circle"></i>
 			<h2>Đăng nhập</h2>
 			<div class="tinh">
@@ -278,7 +276,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div class="row1 scroll-pane">
                             <div class="col col-4">
                                 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>
-                                    Đồng hồ nam</label>
+                                    Đồng hồ nam
+								</label>
                             </div>
                             <div class="col col-4">
                                 <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>

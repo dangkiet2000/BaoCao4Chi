@@ -209,23 +209,19 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <p>Hiển thị</p>
+                                                <p>Active</p>
 
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="bmd-label-floating">Sản phẩm có hiện thị:</label>
-                                                <div class="center">
-                                                    <input type="checkbox" name="">
-
-
-                                                </div>
-
-
+                                                <label class="bmd-label-floating">Nhập ma</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
+
+
                             </div>
 
                             <div class="row">

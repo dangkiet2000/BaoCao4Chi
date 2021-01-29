@@ -46,7 +46,7 @@
             <div class="container-fluid">
                 <div class="navbar-wrapper">
                     <a class="navbar-brand" style="color:#ff6600 ;" href="javascript:;">Danh sách sản phẩm</a>
-                    <a style="color:black ;" href="themsanpham.html">Thêm sản phẩm</a>
+                    <a style="color:black ;" href="View/themsanpham.jsp">Thêm sản phẩm</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -137,34 +137,27 @@
                                                 <th class="text-center">Gía vốn</th>
                                                 <th class="text-center">Gía bán</th>
                                                 <th class="text-center">Tồn kho</th>
-
                                                 <th class="text-center">Hiển thị</th>
-
                                                 <th class="text-center">Remove</th>
+
                                             </tr>
                                             </thead>
 
                                             <tbody>
-                                            <c:forEach items="${SP}" var="p">
-                                                //(String id, String name, String img1, long price, long priceSale, int quantity, String sup, int active
+                                            <c:forEach items="${lad}" var="p">
                                             <tr>
-                                                <td class="pt-3-half" contenteditable="true">"${p.id}"</td>
-                                                <td class="pt-3-half" contenteditable="true"><img width="50px" height="50px"
-                                                                                                  src=""${p.img1}" alt=""></td>
-                                                <td class="pt-3-half" contenteditable="true">"${p.name}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${p.sup}</td>
-                                                <td class="pt-3-half" contenteditable="true">"${p.price}</td>
-                                                <td class="pt-3-half" contenteditable="true">"${p.priceSale}</td>
-                                                <td class="pt-3-half" contenteditable="true">"${p.quantity}</td>
-                                                <td class="pt-3-half" contenteditable="true">"${p.active}</td>
+                                                <td class="pt-3-half" contenteditable="true">${p.id}</td>
+                                                <td class="pt-3-half" contenteditable="true"><img width="50px" height="50px" src="${p.img1}" alt=""></td>
+                                                <td class="pt-3-half" contenteditable="true">${p.name}</td>
+                                                <td class="pt-3-half" contenteditable="true">${p.sup}</td>
+                                                <td class="pt-3-half" contenteditable="true">${p.price}</td>
+                                                <td class="pt-3-half" contenteditable="true">${p.priceSale}</td>
+                                                <td class="pt-3-half" contenteditable="true">${p.quantity}</td>
+                                                <td class="pt-3-half" contenteditable="true">${p.active}</td>
 
-                                                <td>
-                              <span class="table-remove"><button type="button"
-                                                                 class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-                                                </td>
+                                                <td><a style="color:white;background-color: red;padding: 4px 12px;border-radius: 5px" href="DelProduct?idp=${p.id}">Delete</a></td>
                                             </tr>
                                             </c:forEach>
-
                                             </tbody>
                                         </table>
                                     </div>

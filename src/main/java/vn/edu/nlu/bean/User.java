@@ -1,5 +1,7 @@
 package vn.edu.nlu.bean;
 
+import java.sql.Date;
+
 public class User {
     private int id;
     private String name;
@@ -8,6 +10,7 @@ public class User {
     private String email;
     private String address;
     private int active;
+    private int isAdmin;
     private String date;
 
     public User(int id, String name, String password, int phone, String email, String address, int active, String date) {
@@ -19,6 +22,28 @@ public class User {
         this.address = address;
         this.active = active;
         this.date = date;
+    }
+
+    public User(int id, String name, String password, int phone, String email, String address, int active, int isAdmin) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+        this.active = active;
+        this.isAdmin = isAdmin;
+
+    }
+
+
+
+    public int getIsAdmin() {
+        return isAdmin;
+    }
+
+    public void setIsAdmin(int isAdmin) {
+        this.isAdmin = isAdmin;
     }
 
     public int getId() {
@@ -95,6 +120,7 @@ public class User {
                 ", email='" + email + '\'' +
                 ", address='" + address + '\'' +
                 ", active=" + active +
+                ", isAdmin=" + isAdmin +
                 ", date='" + date + '\'' +
                 '}';
     }
