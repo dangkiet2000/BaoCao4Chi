@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: dinht
@@ -35,16 +36,24 @@
                         </select>
                     </div>
 
-                    <div class="box2">
-                        <a>ĐĂNG NHẬP</a>
-                        <ul id="kkk">
-                            <li class="menu-tiki1"><a id="dangnhapdechon">Đăng nhập</a></li>
-                            <li class="menu-tiki2"><a id="close1" style="color: black;">Tạo tài khoản</a></li>
-                            <li class="menu-tiki3"><div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()"></div></li>
-                            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>                            <li class="menu-tiki5"><a>Đăng nhập băng Zalo</a></li>
+                    <c:if test="${sessionScope.acc != null}">
+                        <div class="box2">
+                            <a ><i style="color:white;" class="fas fa-user"></i></a>
+                            <ul id="kkk">
+                                <li class="menu-tiki1"><a href="http://localhost:8080/WebNhom_war/Login" id="dangnhapdechon">Đăng Xuất</a></li>
+<%--                                    <li class="menu-tiki3"><div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()"></div></li>--%>
+<%--                                    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>--%>
+                                <li class="menu-tiki2"><a href="http://localhost:8080/WebNhom_war/Login" id="dangnhapdechon">Profile</a></li>
+                                <li class="menu-tiki3"><a href="http://localhost:8080/WebNhom_war/Login" id="dangnhapdechon">Admin</a></li>
+                            </ul>
+                        </div>
+                    </c:if>
+                    <c:if test="${sessionScope.acc == null}">
+                        <div class="box2">
+                            <a href="http://localhost:8080/WebNhom_war/Login">ĐĂNG NHẬP</a>
+                        </div>
+                    </c:if>
 
-                        </ul>
-                    </div>
                     <div class="clearfix"></div>
                 </div>
 

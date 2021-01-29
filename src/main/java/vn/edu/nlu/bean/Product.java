@@ -37,7 +37,6 @@ public class Product implements Serializable{
         this.price = price;
         this.priceSale = priceSale;
         this.quantity = quantity;
-
         this.active = active;
     }
 

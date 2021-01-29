@@ -156,7 +156,7 @@
                                                 <td class="pt-3-half" contenteditable="true">${p.quantity}</td>
                                                 <td class="pt-3-half" contenteditable="true">${p.active}</td>
                                                 <td><a style="color:white;background-color: red;padding: 4px 12px;border-radius: 5px" href="DelProduct?idp=${p.id}">Delete</a></td>
-                                                <td><a style="color:white;background-color: red;padding: 4px 12px;border-radius: 5px" href="EditProduct?idp=${p.id}">Edit</a></td>
+                                                <td><a style="color:white;background-color: lawngreen;padding: 4px 12px;border-radius: 5px" href="LoadProduct?idp=${p.id}">Edit</a></td>
                                             </tr>
                                             </c:forEach>
                                             </tbody>

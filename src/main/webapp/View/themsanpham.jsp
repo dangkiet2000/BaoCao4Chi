@@ -120,89 +120,85 @@
                                 <p class="card-category"></p>
                             </div>
                             <div class="card-body">
-                                <form>
-
+                                <form action="http://localhost:8080/WebNhom_war/AddProduct" method="post">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <p>Mã sản phẩm</p>
-
+                                                <p>Hình ảnh</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="bmd-label-floating">Nhập mã sản phẩm</label>
-                                                <input type="text" class="form-control">
+                                                <label class="bmd-label-floating">Nhập Link Ảnh</label>
+                                                <input name="img" type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <p>Hãng sản xuất</p>
 
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Nhập hãng sản xuất</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <p>Tên sản phẩm</p>
-
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="bmd-label-floating">Nhập tên sản phẩm</label>
-                                                <input type="text" class="form-control">
+                                                <input name="name" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <p>Hãng sản xuất</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="bmd-label-floating">Nhập hãng sản xuất</label>
+                                                <input type="text" name="sup" class="form-control">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <p>Gía bán sản phẩm</p>
-
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Nhập giá bán sản phẩm</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <p>Gía gốc sản phẩm</p>
-
+                                                <p>Gía vốn</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="bmd-label-floating">Nhập gốc bán sản phẩm</label>
-                                                <input type="text" class="form-control">
+                                                <input name="price" type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <p>Tồn kho</p>
-
+                                                <p>Gía bán</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="bmd-label-floating">Nhập số sản phẩm tồn kho</label>
-                                                <input type="text" class="form-control">
+                                                <label class="bmd-label-floating">Nhập giá bán sản phẩm</label>
+                                                <input name="priceSale" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <p>Tồn kho</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="bmd-label-floating">Tồn kho</label>
+                                                <input name="quantity" type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
@@ -210,47 +206,18 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <p>Active</p>
-
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label class="bmd-label-floating">Nhập ma</label>
-                                                <input type="text" class="form-control">
+                                                <label class="bmd-label-floating">Active</label>
+                                                <input name="active" type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
 
 
                             </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <p style="margin-left:20px">Hình ảnh</p>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <button>Chọn hình</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <p style="margin-left:20px">Video Reviews</p>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <button>Chọn video</button>
-                                    </div>
-                                </div>
-                            </div>
-
                             <button style="    width: 100px;
                     margin-left: 330px;" type="submit" class="btn btn-primary pull-right">Thêm</button>
                             <div class="clearfix"></div>

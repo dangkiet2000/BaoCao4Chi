@@ -29,7 +29,7 @@ public class Login extends HttpServlet {
         }
         if(u != null && u.getIsAdmin() == 1){
             System.out.println(u.getIsAdmin());
-            response.sendRedirect("NhaCungCapController");
+            response.sendRedirect("ProductController");
         }
         if(u != null && u.getIsAdmin() == 0 ){
             System.out.println(u.getIsAdmin());
@@ -55,9 +55,8 @@ public class Login extends HttpServlet {
             session.setAttribute("user_address",user.getAddress());
             cart c= new cart();
             session.setAttribute("cart", c);
-
             System.out.println("Dan chuyen den home sau khi dang nhap");
-            request.getRequestDispatcher("home").forward(request, response);
+            request.getRequestDispatcher("Home").forward(request, response);
         }
 
     }

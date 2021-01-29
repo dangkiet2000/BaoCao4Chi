@@ -31,7 +31,5 @@ public class AddNhaCungCap extends HttpServlet {
             request.getRequestDispatcher("View/themhangsanxuat.jsp").forward(request,response);
             request.setAttribute("mess","Thêm Không Thành Công");
         }
-
-
     }
 }

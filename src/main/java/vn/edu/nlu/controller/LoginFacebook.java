@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(urlPatterns = "/loginFB")
@@ -23,8 +24,9 @@ public class LoginFacebook extends HttpServlet {
         //kiem tra xem email duoc dang ki chua
         if(user_same_email!=null){
             Login.successLogin(request,response,user_same_email);
+            HttpSession session = request.getSession();
+            request.setAttribute("acc",user_same_email);
         }
-
         else {
             boolean isSaved=dao.saveUserLoginByFB_GG(email,name);
             if(isSaved){
