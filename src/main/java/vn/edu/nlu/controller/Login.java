@@ -64,6 +64,6 @@ public class Login extends HttpServlet {
     public static void notifyError(int status_id,String status_content,HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("status",status_id);
         request.setAttribute("status_content",status_content);
-        request.getRequestDispatcher("user_page/Login.jsp").forward(request,response);
+        request.getRequestDispatcher("Login").forward(request,response);
     }
 }

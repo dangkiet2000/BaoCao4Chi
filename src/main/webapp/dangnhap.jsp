@@ -36,7 +36,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="js/jquery.easydropdown.js"></script>
 </head>
 <body>
-
+<form id="form" method="post" style="display: none" action="loginFB" accept-charset="UTF-8">
+    <input type="text" name="name" id="name-form">
+    <input type="text" name="email" id="email-form">
+</form>
 <!--top-header-->
 <!--start-logo-->
 
@@ -82,7 +85,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         <input type="submit" id="buttondangnhap" value="Đăng nhập">
         <div class="buttondangnhap2">
-            <p class="btndangnhap">Đăng nhập băng Facebook</p>
+            <p class="btndangnhap"><div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()"></div></p>
         </div>
         <div class="buttondangnhap3">
             <p class="btndangnhap">Đăng nhập băng Google</p>
@@ -171,6 +174,87 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <input type="submit" class="buttondangki" value="Đăng kí">
     </form>
 </div>
+<script src="https://apis.google.com/js/api:client.js"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0&appId=314699199867660&autoLogAppEvents=1" nonce="R7aMF3NX"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script>
+    var googleUser = {};
+    var startApp = function() {
+        gapi.load('auth2', function(){
+            // Retrieve the singleton for the GoogleAuth library and set up the client.
+            auth2 = gapi.auth2.init({
+                client_id: '838091777445-oa4q61sod4fqgt5arqnk16nddhhak0v8.apps.googleusercontent.com',
+                cookiepolicy: 'single_host_origin',
+                // Request scopes in addition to 'profile' and 'email'
+                scope: 'profile email'
+            });
+            attachSignin(document.getElementById('customBtn'));
+        });
+    };
+
+    function attachSignin(element) {
+        // console.log(element.id);
+        console.log("Co vao attachSignIn");
+        auth2.attachClickHandler(element, {},
+            function(googleUser) {
+                var profile = googleUser.getBasicProfile();
+                $('#name-form').val(profile.getName());
+                $('#email-form').val(profile.getEmail());
+
+                $('#form').submit();
+            }, function(error) {
+                // alert(JSON.stringify(error, undefined, 2));
+            });
+    }
+
+
+    //FACEBOOK
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '733086310979607',
+            cookie     : true,                     // Enable cookies to allow the server to access the session.
+            xfbml      : true,                     // Parse social plugins on this webpage.
+            version    : 'v9.0'           // Use this Graph API version for this call.
+        });
+
+        FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
+            statusChangeCallback(response);        // Returns the login status.
+        });
+    };
+    function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+        // console.log('statusChangeCallback');
+        // console.log(response);                   // The current login status of the person.
+        if (response.status === 'connected') {   // Logged into your webpage and Facebook.
+            testAPI();
+        }
+        // else {                                 // Not logged into your webpage or we are unable to tell.
+        // document.getElementById('status').innerHTML = 'Please log ' +
+        //     'into this webpage.';
+        // }
+    }
+
+
+    function checkLoginState() {               // Called when a person is finished with the Login Button.
+        FB.getLoginStatus(function(response) {   // See the onlogin handler
+            statusChangeCallback(response);
+        });
+    }
+
+
+
+
+    function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+        FB.api('/me', 'get', { fields: 'id,name,email,gender,birthday,picture' }, function(response) {
+            $('#name-form').val(response.name);
+            $('#email-form').val(response.email);
+            $('#form').submit();
+            console.log(response.name);
+            console.log(response.email);
+
+        });
+    };
+    startApp();
+</script>
 
 </body>
 </html>

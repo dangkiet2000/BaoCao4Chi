@@ -4,10 +4,7 @@ import vn.edu.nlu.ConnectionDB;
 import vn.edu.nlu.bean.Product;
 import vn.edu.nlu.bean.User;
 
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 
 public class DAO {
     Connection conn = null;
@@ -45,7 +42,7 @@ public class DAO {
     //them tai khoan dang nhap bang fb or gg vao database
     public boolean saveUserLoginByFB_GG(String email, String name){
         boolean isSaved=false;
-        String sql="insert into user(insert into user`(name`,email) VALUES(?,?))";
+        String sql="INSERT INTO `user`(`name`, email) VALUES (?, ?)";
         try{
             conn = ConnectionDB.connect().getConnection();
             ps = conn.prepareStatement(sql);
@@ -65,14 +62,14 @@ public class DAO {
     }
 
     public User loadUserByEmailGG_FB(String email){
+        User user = new User();
         try{
             conn = ConnectionDB.connect().getConnection();
-            ps = conn.prepareStatement("select * from user where email = ?");
+            ps = conn.prepareStatement("SELECT * FROM `user` where email = ?");
             ps.setString(1,email);
-            User user=null;
             synchronized (ps){
                 ResultSet rs=ps.executeQuery();
-                if(rs.next()){
+                while (rs.next()){
                     user.setId(rs.getInt(1));
                     user.setName(rs.getString(2));
                     user.setPassword(rs.getString(3));
@@ -90,7 +87,7 @@ public class DAO {
         catch (Exception throwables){
             throwables.printStackTrace();
         }
-        return null;
+        return user;
     }
 
 
@@ -173,7 +170,9 @@ public class DAO {
 
     public static void main(String[] args) {
         DAO dao = new DAO();
+        System.out.println( dao.loadUserByEmailGG_FB("18130068@st.hcmuaf.edu.vn"));
 //        dao.signup("dangvankiet.11c5@gmail.com","1234567");
        //dao.signup("DangVanKiet","dangvankiet.11c5@gmail.com","123456",123456);
+//    dao.checkUserExist("18130068@st.hcumaf.edu.vn");
     }
 }

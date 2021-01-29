@@ -46,7 +46,7 @@
             <div class="container-fluid">
                 <div class="navbar-wrapper">
                     <a class="navbar-brand" style="color:#ff6600 ;" href="javascript:;">Danh sách sản phẩm</a>
-                    <a style="color:black ;" href="View/themsanpham.jsp">Thêm sản phẩm</a>
+                    <a style="color:black ;" href="./View/themsanpham.jsp">Thêm sản phẩm</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
                         aria-expanded="false" aria-label="Toggle navigation">

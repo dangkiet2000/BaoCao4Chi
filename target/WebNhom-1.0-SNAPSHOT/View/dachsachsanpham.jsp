@@ -46,7 +46,7 @@
             <div class="container-fluid">
                 <div class="navbar-wrapper">
                     <a class="navbar-brand" style="color:#ff6600 ;" href="javascript:;">Danh sách sản phẩm</a>
-                    <a style="color:black ;" href="View/themsanpham.jsp">Thêm sản phẩm</a>
+                    <a style="color:black ;" href="./View/themsanpham.jsp">Thêm sản phẩm</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -139,6 +139,7 @@
                                                 <th class="text-center">Tồn kho</th>
                                                 <th class="text-center">Hiển thị</th>
                                                 <th class="text-center">Remove</th>
+                                                <th class="text-center">Edit</th>
 
                                             </tr>
                                             </thead>
@@ -154,8 +155,8 @@
                                                 <td class="pt-3-half" contenteditable="true">${p.priceSale}</td>
                                                 <td class="pt-3-half" contenteditable="true">${p.quantity}</td>
                                                 <td class="pt-3-half" contenteditable="true">${p.active}</td>
-
                                                 <td><a style="color:white;background-color: red;padding: 4px 12px;border-radius: 5px" href="DelProduct?idp=${p.id}">Delete</a></td>
+                                                <td><a style="color:white;background-color: red;padding: 4px 12px;border-radius: 5px" href="EditProduct?idp=${p.id}">Edit</a></td>
                                             </tr>
                                             </c:forEach>
                                             </tbody>

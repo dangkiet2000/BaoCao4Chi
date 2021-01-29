@@ -13,6 +13,9 @@ public class User {
     private int isAdmin;
     private String date;
 
+    public User(){
+
+    }
     public User(int id, String name, String password, int phone, String email, String address, int active, String date) {
         this.id = id;
         this.name = name;

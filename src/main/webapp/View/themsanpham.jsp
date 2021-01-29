@@ -44,8 +44,8 @@
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
             <div class="container-fluid">
                 <div class="navbar-wrapper">
-                    <a class="navbar-brand" href="danhsachsanpham.html">Danh sách sản phẩm</a>
-                    <a href="themsanpham.html" style="color:#ff6600;">Thêm sản phẩm</a>
+                    <a class="navbar-brand" href="http://localhost:8080/WebNhom_war/ProductController">Danh sách sản phẩm</a>
+                    <a href="#" style="color:#ff6600;">Thêm sản phẩm</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
                         aria-expanded="false" aria-label="Toggle navigation">
