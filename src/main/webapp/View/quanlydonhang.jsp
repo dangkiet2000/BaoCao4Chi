@@ -43,8 +43,8 @@
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
             <div class="container-fluid">
                 <div class="navbar-wrapper">
-                    <a class="navbar-brand" style="color:#ff6600 ;" href="javascript:;">Danh sách đơn hàng</a>
-                    <a style="color:black ;" href="themdonhang.html">Thêm đơn hàng</a>
+                    <a class="navbar-brand" style="color:#ff6600 ;" href="DonHangController">Danh sách đơn hàng</a>
+
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -128,95 +128,32 @@
                                             <thead>
                                             <tr>
                                                 <th class="text-center">Mã đơn hàng</th>
-                                                <th class="text-center">Ngày đặt</th>
                                                 <th class="text-center">Mã khách hàng</th>
-                                                <th class="text-center">Tổng tiền</th>
                                                 <th class="text-center">Địa chỉ</th>
+                                                <th class="text-center">Số điện Thoại</th>
+                                                <th class="text-center">Ngày tạo</th>
+                                                <th class="text-center">Phương Thức Thanh Toán</th>
                                                 <th class="text-center">Trạng thái</th>
                                                 <th class="text-center">Remove</th>
+
                                             </tr>
                                             </thead>
                                             <tbody>
+                                            <c:forEach items="${ldh}" var="la">
+                                                <tr>
+                                                    <td class="pt-3-half" contenteditable="true">${la.id}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${la.user_id}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${la.address}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${la.phone}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${la.date_create}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${la.payment}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${la.status}</td>
+                                                    <td><a style="color:white;background-color: #ff0000;padding: 4px 12px;border-radius: 5px" href="DelDonHang?ddh=${la.id}">Delete</a></td>
 
-                                            <tr>
-                                                <td class="pt-3-half" contenteditable="true">1</td>
-                                                <td class="pt-3-half" contenteditable="true">25/5/2020 </td>
-                                                <td class="pt-3-half" contenteditable="true">A17</td>
-                                                <td class="pt-3-half" contenteditable="true">25.000.000đ</td>
-                                                <td class="pt-3-half" contenteditable="true">Quận Thủ Đức, TPHCM</td>
-                                                <td class="pt-3-half" contenteditable="true">Đang giao</td>
-                                                <td>
 
-                              <span class="table-remove"><button type="button"
-                                                                 class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-                                                </td>
-                                            </tr>
-                                            <!-- This is our clonable table line -->
-                                            <tr>
-                                                <td class="pt-3-half" contenteditable="true">2</td>
-                                                <td class="pt-3-half" contenteditable="true">25/5/2020 </td>
-                                                <td class="pt-3-half" contenteditable="true">A6</td>
-                                                <td class="pt-3-half" contenteditable="true">25.000.000đ</td>
-                                                <td class="pt-3-half" contenteditable="true">Quận Gò Vấp, TPHCM</td>
-                                                <td class="pt-3-half" contenteditable="true">Đang giao</td>
-                                                <td>
+                                                </tr>
+                                            </c:forEach>
 
-                              <span class="table-remove"><button type="button"
-                                                                 class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="pt-3-half" contenteditable="true">3</td>
-                                                <td class="pt-3-half" contenteditable="true">25/5/2020 </td>
-                                                <td class="pt-3-half" contenteditable="true">A5</td>
-                                                <td class="pt-3-half" contenteditable="true">25.000.000đ</td>
-                                                <td class="pt-3-half" contenteditable="true">Quận Bình Thạnh, TPHCM</td>
-                                                <td class="pt-3-half" contenteditable="true">Đang giao</td>
-                                                <td>
-
-                              <span class="table-remove"><button type="button"
-                                                                 class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="pt-3-half" contenteditable="true">4</td>
-                                                <td class="pt-3-half" contenteditable="true">25/5/2020 </td>
-                                                <td class="pt-3-half" contenteditable="true">A4</td>
-                                                <td class="pt-3-half" contenteditable="true">25.000.000đ</td>
-                                                <td class="pt-3-half" contenteditable="true">Quận 2, TPHCM</td>
-                                                <td class="pt-3-half" contenteditable="true">Đang giao</td>
-                                                <td>
-
-                              <span class="table-remove"><button type="button"
-                                                                 class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="pt-3-half" contenteditable="true">5</td>
-                                                <td class="pt-3-half" contenteditable="true">25/5/2020 </td>
-                                                <td class="pt-3-half" contenteditable="true">A3</td>
-                                                <td class="pt-3-half" contenteditable="true">25.000.000đ</td>
-                                                <td class="pt-3-half" contenteditable="true">Quận 3, TPHCM</td>
-                                                <td class="pt-3-half" contenteditable="true">Đang giao</td>
-                                                <td>
-
-                              <span class="table-remove"><button type="button"
-                                                                 class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="pt-3-half" contenteditable="true">6</td>
-                                                <td class="pt-3-half" contenteditable="true">25/5/2020 </td>
-                                                <td class="pt-3-half" contenteditable="true">A2</td>
-                                                <td class="pt-3-half" contenteditable="true">25.000.000đ</td>
-                                                <td class="pt-3-half" contenteditable="true">Quận 5, TPHCM</td>
-                                                <td class="pt-3-half" contenteditable="true">Đang giao</td>
-                                                <td>
-
-                              <span class="table-remove"><button type="button"
-                                                                 class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-                                                </td>
-                                            </tr>
                                             </tbody>
                                         </table>
                                     </div>

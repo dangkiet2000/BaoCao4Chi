@@ -288,30 +288,30 @@
         <div class="ckeckout-top">
             <div class="cart-items">
                 <h3 style="font-family: Arial, Helvetica, sans-serif;">Số sản phẩm </h3>
-                <script>$(document).ready(function (c) {
-                    $('.close1').on('click', function (c) {
-                        $('.cart-header').fadeOut('slow', function (c) {
-                            $('.cart-header').remove();
-                        });
-                    });
-                });
-                </script>
-                <script>$(document).ready(function (c) {
-                    $('.close2').on('click', function (c) {
-                        $('.cart-header1').fadeOut('slow', function (c) {
-                            $('.cart-header1').remove();
-                        });
-                    });
-                });
-                </script>
-                <script>$(document).ready(function (c) {
-                    $('.close3').on('click', function (c) {
-                        $('.cart-header2').fadeOut('slow', function (c) {
-                            $('.cart-header2').remove();
-                        });
-                    });
-                });
-                </script>
+                <%--                <script>$(document).ready(function (c) {--%>
+                <%--                    $('.close1').on('click', function (c) {--%>
+                <%--                        $('.cart-header').fadeOut('slow', function (c) {--%>
+                <%--                            $('.cart-header').remove();--%>
+                <%--                        });--%>
+                <%--                    });--%>
+                <%--                });--%>
+                <%--                </script>--%>
+                <%--                <script>$(document).ready(function (c) {--%>
+                <%--                    $('.close2').on('click', function (c) {--%>
+                <%--                        $('.cart-header1').fadeOut('slow', function (c) {--%>
+                <%--                            $('.cart-header1').remove();--%>
+                <%--                        });--%>
+                <%--                    });--%>
+                <%--                });--%>
+                <%--                </script>--%>
+                <%--                <script>$(document).ready(function (c) {--%>
+                <%--                    $('.close3').on('click', function (c) {--%>
+                <%--                        $('.cart-header2').fadeOut('slow', function (c) {--%>
+                <%--                            $('.cart-header2').remove();--%>
+                <%--                        });--%>
+                <%--                    });--%>
+                <%--                });--%>
+                <%--                </script>--%>
 
                 <div class="in-check">
                     <ul class="unit">
@@ -328,7 +328,7 @@
                     %>
                     <c:forEach items="${data}" var="d">
                         <ul class="cart-header">
-                            <div class="close1"> </div>
+                            <a href="addCart?type=del&pro_id=${d.id}"><div class="close1"> </div></a>
                             <li class="ring-in"><a href="DetailControll"><img src="${d.img}"
                                                                               class="img-responsive" alt=""></a>
                             </li>
@@ -352,59 +352,60 @@
                     </c:forEach>
 
                 </div>
-                <div class="othanhtoan">
-                    <div class="othanhtoan1">
-                        <div>
-                            <p class="tamtinh">Tạm tính</p>
-                            <a href="cart.jsp">
-                                <div class="total total1">
-                                    <span style="font-size: 15px;color: black;" class="simpleCart_total"></span>
-                                </div>
+                <%--                <div class="othanhtoan">--%>
+                <%--                    <div class="othanhtoan1">--%>
+                <%--                        <div>--%>
+                <%--                            <p class="tamtinh">Tạm tính</p>--%>
+                <%--                            <a href="cart.jsp">--%>
+                <%--                                <div class="total total1">--%>
+                <%--                                    <span style="font-size: 15px;color: black;" class="simpleCart_total"></span>--%>
+                <%--                                </div>--%>
 
-                            </a>
-
-
+                <%--                            </a>--%>
 
 
-                        </div>
+
+
+                <%--                        </div>--%>
+
+                <%--                    </div>--%>
+                <div class="othanhtoan2">
+                    <div>
+                        <p class="tamtinh">Thành tiền</p>
+                        <a href="checkout.html">
+                            <div class="total total1">
+                                <%--                                    Lay ra bien total cua cart trong session--%>
+                                <span style="font-size: 20px;color: #ff6600;" class="simpleCart_total">"${sessionScope.cart.total}"</span>
+                            </div>
+
+                        </a>
+
+
+
+
 
                     </div>
-                    <div class="othanhtoan2">
-                        <div>
-                            <p class="tamtinh">Tạm tính</p>
-                            <a href="checkout.html">
-                                <div class="total total1">
-                                    <span style="font-size: 20px;color: #ff6600;" class="simpleCart_total">"${d.price*d.quantity}"</span>
-                                </div>
-
-                            </a>
-
-
-
-
-
-                        </div>
-                        <p style="    padding-top: 53px;
+                    <p style="    padding-top: 53px;
 							margin-left: 116px;
 							font-size: 12px;">Đã bao gồm thuế VAT nếu có</p>
 
 
-                    </div>
-                    <div class="othanhtoan2" style="background-color: white;">
-                        <a style="text-decoration: none;" href="Order?pid=${d.id}"><button type="button"
-                                                                                           class="cart__submit">Tiến hành đặt hàng</button></a>
-
-
-
-                    </div>
+                </div>
+                <div class="othanhtoan2" style="background-color: white;">
+                    <a style="text-decoration: none;" href="Order?pid=${d.id}"><button type="button"
+                                                                                       class="cart__submit">Tiến hành đặt hàng</button></a>
 
 
 
                 </div>
 
+
+
             </div>
+
         </div>
     </div>
+</div>
 </div>
 <script>
     $('input.input-qty').each(function () {

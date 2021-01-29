@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="active"><a href="donghonu">Nữ</a>
+                        <li class="active"><a href="SearchControl?index=1&txtSearch=">Nữ</a>
                             <div class="mepanel">
                                 <div class="row">
                                     <div class="col1 me-one">

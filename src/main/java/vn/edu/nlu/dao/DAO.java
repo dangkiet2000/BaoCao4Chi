@@ -165,6 +165,29 @@ public class DAO {
 
     }
 
+    // insert don dat hang
+    public boolean insertOrder(int user_id, String address, int phone, int status, double totalprice){
+
+        try{
+            conn = ConnectionDB.connect().getConnection();
+            ps = conn.prepareStatement("INSERT INTO `order`(user_id, address, phone, date_created, `status`, totalprice) VALUES (?, ?, ?, CURRENT_DATE,?, ?)");
+            ps.setInt(1, user_id);
+            ps.setString(2, address);
+            ps.setInt(3, phone);
+            ps.setInt(4, status);
+            ps.setDouble(5, totalprice);
+            synchronized (ps){
+                ps.executeUpdate();
+            }
+            ps.close();
+            return true;
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
     public static void main(String[] args) {
         DAO dao = new DAO();
        // System.out.println( dao.loadUserByEmailGG_FB("18130068@st.hcmuaf.edu.vn"));

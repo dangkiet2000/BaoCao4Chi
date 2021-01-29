@@ -35,6 +35,12 @@ public class Login extends HttpServlet {
             System.out.println(u.getIsAdmin());
             HttpSession session = request.getSession();
             session.setAttribute("acc",u);
+            // them
+            session.setAttribute("user_id", u.getId());
+            session.setAttribute("user_name", u.getName());
+            session.setAttribute("address", u.getAddress());
+            session.setAttribute("phone",u.getPhone());
+            session.setAttribute("email", u.getEmail());
             response.sendRedirect("Home");
         }
     }

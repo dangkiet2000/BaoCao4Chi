@@ -38,7 +38,7 @@
 <div class="sidebar-wrapper">
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="View/quanlydonhang.jsp">
+            <a class="nav-link" href="DonHangController">
                 <i class="material-icons">dashboard</i>
                 <p>Quản lý đơn hàng</p>
             </a>
@@ -55,7 +55,7 @@
                 <p>Quản lý admin</p>
             </a>
         </li>
-        <li class="nav-item  ">
+        <li class="nav-item active">
             <a class="nav-link" href="ProductController">
                 <i class="material-icons">content_paste</i>
                 <p>Quản lý sản phẩm</p>

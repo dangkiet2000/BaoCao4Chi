@@ -2944,8 +2944,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                             class="required"
                                                             title="bắt buộc">*</abbr></label><span
                                                             class="woocommerce-input-wrapper"><input type="text"
-                                                                                                     class="input-text" name="billing_first_name"
-                                                                                                     id="billing_first_name" placeholder="" value=""
+                                                                                                     class="input-text" name="name"
+                                                                                                     id="billing_first_name" placeholder="" value="${sessionScope.user_name}"
                                                                                                      autocomplete="given-name"></span></p>
 
                                                     <p class="form-row address-field validate-required form-row-wide"
@@ -2954,9 +2954,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                             class="required"
                                                             title="bắt buộc">*</abbr></label><span
                                                             class="woocommerce-input-wrapper"><input type="text"
-                                                                                                     class="input-text" name="billing_address_1"
+                                                                                                     class="input-text" name="address"
                                                                                                      id="billing_address_1" placeholder="Địa chỉ"
-                                                                                                     value="" autocomplete="address-line1"
+                                                                                                     value="${sessionScope.address}" autocomplete="address-line1"
                                                                                                      data-placeholder="Địa chỉ"></span>
                                                     </p>
 
@@ -2975,8 +2975,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                         thoại&nbsp;<abbr class="required"
                                                                          title="bắt buộc">*</abbr></label><span
                                                             class="woocommerce-input-wrapper"><input type="tel"
-                                                                                                     class="input-text" name="billing_phone"
-                                                                                                     id="billing_phone" placeholder="" value=""
+                                                                                                     class="input-text" name="phone"
+                                                                                                     id="billing_phone" placeholder="" value="${sessionScope.phone}"
                                                                                                      autocomplete="tel"></span></p>
                                                     <p class="form-row form-row-wide validate-required validate-email"
                                                        id="billing_email_field" data-priority="110"><label
@@ -2984,8 +2984,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                         email&nbsp;<abbr class="required"
                                                                          title="bắt buộc">*</abbr></label><span
                                                             class="woocommerce-input-wrapper"><input type="email"
-                                                                                                     class="input-text" name="billing_email"
-                                                                                                     id="billing_email" placeholder="" value=""
+                                                                                                     class="input-text" name="email"
+                                                                                                     id="billing_email" placeholder="" value="${sessionScope.email}"
                                                                                                      autocomplete="email"></span></p>
                                                 </div>
                                             </div>
@@ -3028,31 +3028,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 Collection<Product> data = c.getData();
                                                 request.setAttribute("data",data);
                                             %>
-                                            <c:forEach items="${data}" var="da">
-                                                <tbody>
-                                                <tr class="cart_item">
-                                                    <td class="product-name">${da.name}
 
-                                                        <strong class="product-quantity">x${da.quantity}</strong>
-                                                    </td>
-                                                    <td class="product-total">
-                                                            <span class="woocommerce-Price-amount amount"><bdi>${da.price*da.quantity}&nbsp;<span
-                                                                    class="woocommerce-Price-currencySymbol">₫</span></bdi></span>
-                                                    </td>
-                                                </tr>
+                                            <tbody>
+                                            <%--                                                <tr class="cart_item">--%>
+                                            <%--                                                    <td class="product-name">${da.name}--%>
 
-                                                </tbody>
+                                            <%--                                                        <strong class="product-quantity">x${da.quantity}</strong>--%>
+                                            <%--                                                    </td>--%>
+                                            <%--                                                    <td class="product-total">--%>
+                                            <%--                                                            <span class="woocommerce-Price-amount amount"><bdi>${da.price*da.quantity}&nbsp;<span--%>
+                                            <%--                                                                    class="woocommerce-Price-currencySymbol">₫</span></bdi></span>--%>
+                                            <%--                                                    </td>--%>
+                                            <%--                                                </tr>--%>
 
-                                                <tfoot>
-                                                <tr class="order-total">
-                                                    <th>Tổng Cộng</th>
-                                                    <td><strong><span
-                                                            class="woocommerce-Price-amount amount"><bdi>${da.quantity*da.price}&nbsp;<span
-                                                            class="woocommerce-Price-currencySymbol">₫</span></bdi></span></strong>
-                                                    </td>
-                                                </tr>
-                                                </tfoot>
-                                            </c:forEach>
+                                            </tbody>
+
+                                            <tfoot>
+                                            <tr class="order-total">
+                                                <th>Tổng Cộng</th>
+                                                <td><strong><span
+                                                        class="woocommerce-Price-amount amount"><bdi>${sessionScope.cart.total}&nbsp;<span
+                                                        class="woocommerce-Price-currencySymbol">₫</span></bdi></span></strong>
+                                                </td>
+                                            </tr>
+                                            </tfoot>
+
                                             <div class="blockUI" style="display:none"></div>
                                             <div style="opacity: -0.4;">
                                                 <div class="blockUI blockMsg blockElement"
@@ -3134,7 +3134,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                             sách riêng tư</a> của chúng tôi.</p>
                                                 </div>
                                             </div>
-                                            <a style="text-decoration: none;" href="thanhtoanthanhcong.html">
+                                            <a style="text-decoration: none;" href="Home">
                                                 <div style="width: 100%;background-color: #ff6600;color: white;height: 50px; text-align: center;padding-top: 9px;
                                                     font-size: 20px;">Đặt hàng</div>
                                             </a>
@@ -3337,13 +3337,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-md-12 text-center ">
                         <p class="coppyright">Copyright Luxury Watches © 2020.</p>
                     </div>
-
                 </div>
             </div>
         </div>
     </footer>
-
-
+</div>
     <!--footer-end-->
 </body>
 </html>

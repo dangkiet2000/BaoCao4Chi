@@ -139,20 +139,20 @@
                                             <tbody>
                                             <c:forEach items="${BL}" var="b">
 
-                                            <tr>
-                                                <td class="pt-3-half" contenteditable="true">"${b.maBinhLuan}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${b.maNguoiDung}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${b.maSanPham}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${b.noidungBL}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${b.maDanhGia}"</td>
-                                                <td class="pt-3-half" contenteditable="true">"${b.ngay}"</td>
+                                                <tr>
+                                                    <td class="pt-3-half" contenteditable="true">"${b.maBinhLuan}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">"${b.maNguoiDung}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">"${b.maSanPham}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">"${b.noidungBL}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">"${b.maDanhGia}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">"${b.ngay}"</td>
 
 
-                                                <td>
+                                                    <td>
                               <span class="table-remove"><button type="button"
                                                                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-                                                </td>
-                                            </tr>
+                                                    </td>
+                                                </tr>
                                             </c:forEach>
 
                                             </tbody>

@@ -146,14 +146,14 @@
                                             <c:forEach items="${listUser}" var="u">
 
                                                 <tr>
-                                                    <td class="pt-3-half" contenteditable="true">"${u.id}"</td>
-                                                    <td class="pt-3-half" contenteditable="true">"${u.name}"</td>
-                                                    <td class="pt-3-half" contenteditable="true">"${u.password}"</td>
-                                                    <td class="pt-3-half" contenteditable="true">"${u.phone}"</td>
-                                                    <td class="pt-3-half" contenteditable="true">"${u.email}"</td>
-                                                    <td class="pt-3-half" contenteditable="true">"${u.address}"</td>
-                                                    <td class="pt-3-half" contenteditable="true">"${u.active}"</td>
-                                                    <td class="pt-3-half" contenteditable="true">"${u.date}"</td>
+                                                    <td class="pt-3-half" contenteditable="true">${u.id}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${u.name}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${u.password}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${u.phone}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${u.email}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${u.address}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${u.active}</td>
+                                                    <td class="pt-3-half" contenteditable="true">${u.date}</td>
                                                     <td>
                               <span class="table-remove"><button type="button"
                                                                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>

@@ -7,7 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class cart implements Serializable {
-    Map<String, Product> data= new HashMap<>();
+    private Map<String, Product> data= new HashMap<>();
+    private double total=0; // tong cua san pham trong gio hang hien tai (tinh ca so luong)
     public cart() {
 
     }
@@ -24,19 +25,35 @@ public class cart implements Serializable {
         if(p==null) return ;
         if(data.containsKey(p.getId())){
             data.get(p.getId()).add();
+            total +=data.get(p.getId()).getPrice(); // them gia tien cua san pham co id
             return;
         }
         p.setQuantity(1);
+
         data.put(p.getId(),p);
+        total +=data.get(p.getId()).getPrice(); // them gia tien cua sp co id
     }
     public void update(int id,int quantity){
         if(quantity<0) return;
         if(data.containsKey(id)) data.get(id).setQuantity(quantity);
 
     }
+
+    @Override
+    public String toString() {
+        String result="";
+        for (String key:data.keySet()){
+            result +="\n"+data.get(key);
+        }
+        return result;
+    }
+
     public boolean remove(String id){
         if (data.containsKey(id)) {
+            total -=data.get(id).getPrice()*data.get(id).getQuantity(); // tong tru di san pham co id da xoa (ke ca soluong)
+            System.out.println("total trang cart: "+total);
             data.remove(id);
+
             return true;
         }
         return false;
@@ -50,6 +67,19 @@ public class cart implements Serializable {
         }
         return sum;
     }
+
+    public void setData(Map<String, Product> data) {
+        this.data = data;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
     public Collection<Product> getData(){
         return data.values();
     }
