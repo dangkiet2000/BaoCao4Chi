@@ -22,6 +22,12 @@ public class User {
         this.password = password;
     }
 
+    public User(String name, String password, String email) {
+        this.name = name;
+        this.password = password;
+        this.email = email;
+    }
+
     public User(int id, String name, String password, int phone, String email, String address, int active, String date) {
         this.id = id;
         this.name = name;

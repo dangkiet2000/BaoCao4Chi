@@ -104,13 +104,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-        <p >Bạn mới biết đến HKT? <a href="signup.jsp" id="close5" style="color: rgb(255, 66, 78);">Đăng ký </a> </p>
+        <p style="margin-top: 30px;margin-left: 87px" >Bạn mới biết đến HKT? <a href="signup.jsp" id="close5" style="color: rgb(255, 66, 78);">Đăng ký </a> </p>
     </div>
 
 </form>
 <div class="oquenmatkhau">
-    <form id="oquenmatkhau1" onsubmit="return oquenmatkhau2()">
-
+    <form id="oquenmatkhau1" action="http://localhost:8080/WebNhom_war/ForgotPassWord" onsubmit="return oquenmatkhau2()">
         <i id="close" class="fas fa-times-circle" style="   margin-top: -41px;
 			margin-right: -24px;"></i>
         <h2>Quên mật khẩu</h2>
@@ -120,7 +119,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <p>Email/SĐT</p>
             </div>
             <div class="phai">
-                <input type="text" id="email6" name="email" placeholder="Nhập Email hoặc Số điện thoại"
+                <input type="text" id="email6" name="emailforgot" placeholder="Nhập Email hoặc Số điện thoại"
                        class="Input-sc-17i9bto-0 bYlDgr" value="">
 
             </div>

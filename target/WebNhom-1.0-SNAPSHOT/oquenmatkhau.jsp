@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="oquenmatkhau">
-    <form id="oquenmatkhau1" onsubmit="return oquenmatkhau2()">
+    <form id="oquenmatkhau1" action="" onsubmit="return oquenmatkhau2()">
 
         <i id="close" class="fas fa-times-circle" style="   margin-top: -41px;
 			margin-right: -24px;"></i>
@@ -25,7 +25,6 @@
             <div class="phai">
                 <input type="text" id="email6" name="email" placeholder="Nhập Email hoặc Số điện thoại"
                        class="Input-sc-17i9bto-0 bYlDgr" value="">
-
             </div>
 
 

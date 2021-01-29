@@ -120,15 +120,15 @@ public class DAO {
         return null;
     }
 
-    public boolean signup(int id,String name,String email, String password,int phone) throws UnsupportedEncodingException, NoSuchAlgorithmException {
-        String passmh = PasswordEncode.passwordSHA512(password);
+    public boolean signup(int id,String name,String email, String password,int phone)  {
+       // String passmh = PasswordEncode.passwordSHA512(password);
         String query = "insert into user(id,name,password,phone,email) values(?,?,?,?,?)";
         try {
             conn = ConnectionDB.connect().getConnection();
             ps = conn.prepareStatement(query);
             ps.setInt(1, id);
             ps.setString(2, name);
-            ps.setString(3, passmh);
+            ps.setString(3, password);
             ps.setInt(4, phone);
             ps.setString(5, email);
             ps.executeUpdate();

@@ -33,13 +33,8 @@ public class SignUp extends HttpServlet {
         }else{
             User u  = dao.checkUserExist(email);
             if(u == null){
-                try {
-                    dao.signup(id,name,email,pass,phone);
-                } catch (NoSuchAlgorithmException e) {
-                    e.printStackTrace();
-                }
-               response.sendRedirect("Login");
-
+                dao.signup(id,name,email,pass,phone);
+                response.sendRedirect("Login");
             }else{
                 request.setAttribute("show","Email Đã Tồn Tại");
                 request.getRequestDispatcher("signup.jsp").forward(request,response);
