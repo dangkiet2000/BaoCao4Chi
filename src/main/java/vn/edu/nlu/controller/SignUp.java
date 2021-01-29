@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 
 @WebServlet(name = "SignUp",urlPatterns = "/SignUP")
 public class SignUp extends HttpServlet {
@@ -19,28 +20,30 @@ public class SignUp extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String email = request.getParameter("email");
-        String pass = request.getParameter("password");
+        String pass = request.getParameter("pass");
         String name = request.getParameter("name");
-        String re_pass = request.getParameter("repassword");
-        String p = request.getParameter("phone");
-        int phone = Integer.parseInt(p);
-        UserEntity user =new UserEntity() ;
+        int phone = Integer.parseInt(request.getParameter("username"));
+        String re_pass = request.getParameter("repeat-pass");
+        UserEntity user = new UserEntity();
         int id = user.getAllUser().size()+1;
         DAO dao = new DAO();
-        System.out.println(name  + pass +re_pass + email + phone);
+        if(!pass.equals(re_pass)){
+            request.setAttribute("show","Mật Khẩu Nhập Lại Không Đúng");
+           request.getRequestDispatcher("signup.jsp").forward(request,response);
+        }else{
+            User u  = dao.checkUserExist(email);
+            if(u == null){
+                try {
+                    dao.signup(id,name,email,pass,phone);
+                } catch (NoSuchAlgorithmException e) {
+                    e.printStackTrace();
+                }
+               response.sendRedirect("Login");
 
-
-//        if(!pass.equals(re_pass)){
-//            response.sendRedirect("dangnhap.jsp");
-//        }else{
-//            DAO dao = new DAO();
-//            User u  = dao.checkUserExist(user);
-//            if(u == null){
-//                dao.signup(user,pass);
-//                response.sendRedirect("index.jsp");
-//            }else{
-//                response.sendRedirect("dangnhap.jsp");
-//            }
-//        }
+            }else{
+                request.setAttribute("show","Email Đã Tồn Tại");
+                request.getRequestDispatcher("signup.jsp").forward(request,response);
+            }
+        }
     }
 }

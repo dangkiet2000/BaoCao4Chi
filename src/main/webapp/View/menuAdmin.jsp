@@ -31,13 +31,14 @@
     <link href="<c:url value='/csswebadmin/admin/css/material-dashboard-rtl.css' />" rel="stylesheet" />
 </head>
 <body>
-<div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-    ADMIN
-</a></div>
+<div class="logo">
+    <span><a href="#" class="simple-text logo-normal">ADMIN</a></span>
+    <span><a href="http://localhost:8080/WebNhom_war/Home" class="simple-text logo-normal">HOME</a></span>
+</div>
 <div class="sidebar-wrapper">
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="./quanlydonhang.jsp">
+            <a class="nav-link" href="View/quanlydonhang.jsp">
                 <i class="material-icons">dashboard</i>
                 <p>Quản lý đơn hàng</p>
             </a>
@@ -49,19 +50,19 @@
             </a>
         </li>
         <li class="nav-item  ">
-            <a class="nav-link" href="./danhsachadmin.jsp">
+            <a class="nav-link" href="./View/danhsachadmin.jsp">
                 <i class="material-icons">person</i>
                 <p>Quản lý admin</p>
             </a>
         </li>
         <li class="nav-item  ">
-            <a class="nav-link" href="./dachsachsanpham.jsp">
+            <a class="nav-link" href="ProductController">
                 <i class="material-icons">content_paste</i>
                 <p>Quản lý sản phẩm</p>
             </a>
         </li>
         <li class="nav-item   ">
-            <a class="nav-link" href="./danhsachblog.jsp">
+            <a class="nav-link" href="View/danhsachblog.jsp">
                 <i class="material-icons">content_paste</i>
                 <p>Quản lý blog</p>
             </a>
@@ -73,7 +74,7 @@
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="./quanlythanhtoan.jsp">
+            <a class="nav-link" href="View/quanlythanhtoan.jsp">
                 <i class="material-icons">bubble_chart</i>
                 <p>Quản lý thanh toán</p>
             </a>
@@ -91,19 +92,19 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./quanlydanhgia.jsp">
+            <a class="nav-link" href="View/quanlydanhgia.jsp">
                 <i class="fab fa-product-hunt"></i>
                 <p>Quản lý đánh giá</p>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./dashboard.jsp">
+            <a class="nav-link" href="View/dashboard.jsp">
                 <i class="material-icons">dashboard</i>
                 <p>Xem thống kê</p>
             </a>
         </li>
         <li class="nav-item  ">
-            <a class="nav-link" href="./user.jsp">
+            <a class="nav-link" href="View/user.jsp">
                 <i class="material-icons">dashboard</i>
                 <p>Thông tin cá nhân</p>
             </a>

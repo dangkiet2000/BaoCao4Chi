@@ -44,7 +44,7 @@
 <%--                                    <li class="menu-tiki3"><div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()"></div></li>--%>
 <%--                                    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>--%>
                                 <li class="menu-tiki2"><a href="http://localhost:8080/WebNhom_war/Login" id="dangnhapdechon">Profile</a></li>
-                                <li class="menu-tiki3"><a href="http://localhost:8080/WebNhom_war/Login" id="dangnhapdechon">Admin</a></li>
+                                <li class="menu-tiki2"><a href="http://localhost:8080/WebNhom_war/ProductController" id="dangnhapdechon">Admin</a></li>
                             </ul>
                         </div>
                     </c:if>

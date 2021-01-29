@@ -1,9 +1,13 @@
 package vn.edu.nlu.dao;
 
+import sun.security.util.Password;
 import vn.edu.nlu.ConnectionDB;
 import vn.edu.nlu.bean.Product;
 import vn.edu.nlu.bean.User;
+import vn.edu.nlu.entity.PasswordEncode;
 
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
 import java.sql.*;
 
 public class DAO {
@@ -116,24 +120,17 @@ public class DAO {
         return null;
     }
 
-    public boolean signup(int id,String name,String email, String password,int phone) {
-        String query = "insert into user values(?,?,?,?,?,?,?,?,?)";
-        String address = null;
-        int active = 1;
-        int isAdmin = 0;
-        Date date = new Date(System.currentTimeMillis());
+    public boolean signup(int id,String name,String email, String password,int phone) throws UnsupportedEncodingException, NoSuchAlgorithmException {
+        String passmh = PasswordEncode.passwordSHA512(password);
+        String query = "insert into user(id,name,password,phone,email) values(?,?,?,?,?)";
         try {
             conn = ConnectionDB.connect().getConnection();
             ps = conn.prepareStatement(query);
             ps.setInt(1, id);
             ps.setString(2, name);
-            ps.setString(3, password);
+            ps.setString(3, passmh);
             ps.setInt(4, phone);
             ps.setString(5, email);
-            ps.setString(6, address);
-            ps.setInt(7, active);
-            ps.setDate(8, date);
-            ps.setInt(9,isAdmin);
             ps.executeUpdate();
             return true;
         } catch (Exception e) {
@@ -170,9 +167,10 @@ public class DAO {
 
     public static void main(String[] args) {
         DAO dao = new DAO();
-        System.out.println( dao.loadUserByEmailGG_FB("18130068@st.hcmuaf.edu.vn"));
+       // System.out.println( dao.loadUserByEmailGG_FB("18130068@st.hcmuaf.edu.vn"));
 //        dao.signup("dangvankiet.11c5@gmail.com","1234567");
        //dao.signup("DangVanKiet","dangvankiet.11c5@gmail.com","123456",123456);
 //    dao.checkUserExist("18130068@st.hcumaf.edu.vn");
+        //System.out.println(dao.signup(23,"dangvankiet","da","123",123));
     }
 }

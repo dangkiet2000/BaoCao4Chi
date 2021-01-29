@@ -55,7 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <form style="margin-top: 0px;" id="formdangnhap" action="Login" onsubmit="return formdangnhap1()" method="post">
     <div class="dangnhap">
         <h2>Đăng nhập</h2>
-       <p style="color: red" class="text-ranger">${mess}</p>
+        <p style="color: red" class="text-ranger">${mess}</p>
         <div class="tinh">
             <div class="trai">
                 <p>Email/SĐT</p>
@@ -83,22 +83,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <p>Quên mật khẩu? Nhấn vào <a id="day">đây</a> </p>
         </div>
 
-        <input type="submit" id="buttondangnhap" value="Đăng nhập">
-        <div class="buttondangnhap2">
+        <input style="width: 57%" type="submit" id="buttondangnhap" value="Đăng nhập">
+        <div  class="buttondangnhap222222  " style="
+    padding-top: 7px;
+    /* width: 183px; */
+    border-radius: 4px;
+    color: white;
+    width: 63%;
+    height: 42px;
+    /* margin: auto; */
+    /* background-color: rgb(59, 89, 152); */
+    border: none;
+    margin-left: 95px;
+    /* margin-top: 20px; */
+    /* text-align: center; */
+    font-family: Arial, Helvetica, sans-serif;">
+
             <p class="btndangnhap"><div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()"></div></p>
         </div>
-        <div class="buttondangnhap3">
-            <p class="btndangnhap">Đăng nhập băng Google</p>
-        </div>
-        <div class="buttondangnhap4">
-            <p class="btndangnhap"> Đăng nhập bằng Zalo</p>
-        </div>
 
-        <p class="linkdangky" >Bạn mới biết đến HKT? <a id="close5" style="color: rgb(255, 66, 78);">Đăng ký </a> </p>
+
+
+        <p >Bạn mới biết đến HKT? <a href="signup.jsp" id="close5" style="color: rgb(255, 66, 78);">Đăng ký </a> </p>
     </div>
 
 </form>
-
 <div class="oquenmatkhau">
     <form id="oquenmatkhau1" onsubmit="return oquenmatkhau2()">
 
